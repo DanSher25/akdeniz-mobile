@@ -140,6 +140,94 @@
       <section class="catalog-header">
         <div class="catalog-header__wrapper container">
           <h2 class="catalog-header__title">Недвижимость в регионе Анталия</h2>
+          <div class="catalog-header filter">
+            <div class="filter__wrapper">
+              <div class="filter__element filter__all">
+                <div class="filter__amount">
+                  <svg width="16" height="16">
+                    <path
+                      d="M10.5 7.2A3.201 3.201 0 017.46 5H1a1 1 0 010-2h6.46a3.201 3.201 0 016.08 0H15a1 1 0 110 2h-1.46a3.201 3.201 0 01-3.04 2.2zM1 11a1 1 0 000 2h1.46a3.201 3.201 0 006.08 0H15a1 1 0 100-2H8.54a3.201 3.201 0 00-6.08 0H1zm5.9 1a1.4 1.4 0 11-2.8 0 1.4 1.4 0 012.8 0zm5-8a1.4 1.4 0 10-2.8 0 1.4 1.4 0 002.8 0z"
+                      fill="currentColor"
+                      fill-opacity=".92"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="filter__label">Фильтры</div>
+              </div>
+              <div class="filter__element filter__price bs-trigger" data-bs-target="card-price">
+                <div class="bs-trigger__label filter__label">цена</div>
+                <svg class="bs-trigger__icon" width="16" height="16">
+                  <path d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z" />
+                </svg>
+
+                <div class="bs-content" id="card-price">
+                  <div class="bs-content__title">Цена, ₽</div>
+                  <div class="filter__switch filter-switch" data-switch>
+                    <button class="filter-switch__item is-active" data-value="total">За всё</button>
+                    <button class="filter-switch__item" data-value="m2">За м²</button>
+                    <div class="filter-switch__color"></div>
+                  </div>
+                  <input type="hidden" name="price_type" value="total" id="priceType" />
+                  <div class="filter__prices">
+                    <div class="filter__price-field">
+                      <span class="filter__price-label">от</span>
+                      <input type="text" name="price_from" class="filter__price-input" />
+                    </div>
+                    <div class="filter__price-field">
+                      <span class="filter__price-label">до</span>
+                      <input type="text" name="price_top" class="filter__price-input" />
+                    </div>
+                  </div>
+
+                  <a href="/" class="filter__show-btn">Показать 5 338 предложений</a>
+                </div>
+              </div>
+              <div class="filter__element filter__disctrict bs-trigger" data-bs-target="card-district">
+                <div class="bs-trigger__label filter__label">Район</div>
+                <svg class="bs-trigger__icon" width="16" height="16">
+                  <path
+                    d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <div class="bs-content" id="card-district">
+                  <div class="bs-content__title">Район</div>
+                  <!-- <div class="filter__checkbox-list">
+                    <input type="checbox" name="district" class="filter__checbox-item" />
+                  </div> -->
+                  <a href="/" class="filter__show-btn">Показать 5 338 предложений</a>
+                </div>
+              </div>
+              <div class="filter__element filter__rooms bs-trigger" data-bs-target="card-rooms">
+                <div class="bs-trigger__label filter__label">Комнаты</div>
+                <svg class="bs-trigger__icon filter__label" width="16" height="16">
+                  <path
+                    d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <div class="bs-content" id="card-rooms">
+                  <div class="bs-content__title">Комнаты</div>
+
+                  <a href="/" class="filter__show-btn">Показать 5 338 предложений</a>
+                </div>
+              </div>
+              <div class="filter__element filter__regions bs-trigger" data-bs-target="card-region">
+                <div class="bs-trigger__label filter__label">Регион</div>
+                <svg class="bs-trigger__icon filter__label" width="16" height="16">
+                  <path
+                    d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <div class="bs-content" id="card-region">
+                  <div class="bs-content__title">Регион</div>
+
+                  <a href="/" class="filter__show-btn">Показать 5 338 предложений</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="catalog-header__sort-wrapper">
             <div class="catalog-header__results-amount">143 новостройки</div>
             <div class="catalog-header__sort dropdown-list">
@@ -161,106 +249,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="filter">
-        <div class="filter__wrapper container">
-          <form action="#" class="filter__form">
-            <div class="filter__main">
-              <div class="filter__dropdown filter__section dropdown-list">
-                <input type="hidden" name="category" class="dropdown-list__input" value="Все регионы" />
 
-                <span class="filter__dropdown-text dropdown-list__text">
-                  Все регионы
-                  <svg width="16" height="16">
-                    <path
-                      d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
-                      fill="currentColor"
-                    ></path>
-                  </svg>
-                </span>
-
-                <div class="dropdown-list__wrapper">
-                  <div class="filter__dropdown-list dropdown-list__list">
-                    <a href="/" class="dropdown-list__dropdown-item" data-type="Все регионы">Все регионы</a>
-                    <a href="/" class="dropdown-list__dropdown-item" data-type="Аланья">Аланья</a>
-                    <a href="/" class="dropdown-list__dropdown-item" data-type="Анталия">Анталия</a>
-                    <a href="/" class="dropdown-list__dropdown-item" data-type="Серик (Белек)">Серик (Белек)</a>
-                    <a href="/" class="dropdown-list__dropdown-item" data-type="Кемер">Кемер</a>
-                    <a href="/" class="dropdown-list__dropdown-item" data-type="Финике">Финике</a>
-                    <a href="/" class="dropdown-list__dropdown-item" data-type="Газипаша">Газипаша</a>
-                    <a href="/" class="dropdown-list__dropdown-item" data-type="Мерсин">Мерсин</a>
-                    <a href="/" class="dropdown-list__dropdown-item" data-type="Стамбул">Стамбул</a>
-                    <a href="/" class="dropdown-list__dropdown-item" data-type="Манавгат (Сиде)">Манавгат (Сиде)</a>
-                    <a href="/" class="dropdown-list__dropdown-item" data-type="Бодрум">Бодрум</a>
-                    <a href="/" class="dropdown-list__dropdown-item" data-type="Фетхие">Фетхие</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="filter__rooms filter__section">
-                <div class="filter__rooms-list">
-                  <label class="filter__room">
-                    <input type="checkbox" name="rooms[]" value="Студия" hidden />
-                    <span>Студия</span>
-                  </label>
-
-                  <label class="filter__room">
-                    <input type="checkbox" name="rooms[]" value="1" hidden />
-                    <span>1</span>
-                  </label>
-
-                  <label class="filter__room">
-                    <input type="checkbox" name="rooms[]" value="2" hidden />
-                    <span>2</span>
-                  </label>
-
-                  <label class="filter__room">
-                    <input type="checkbox" name="rooms[]" value="3" hidden />
-                    <span>3</span>
-                  </label>
-
-                  <label class="filter__room">
-                    <input type="checkbox" name="rooms[]" value="4+" hidden />
-                    <span>4+</span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="filter__price filter__section">
-                <div class="filter__price-field">
-                  <span class="filter__price-label">Цена до, ₽</span>
-                  <input type="text" name="price" class="filter__price-input" />
-                </div>
-              </div>
-              <div class="filter__districts filter__section dropdown-list districts-dropdown">
-                <input type="hidden" name="districts" class="districts-input" />
-
-                <span class="filter__dropdown-text dropdown-list__text">Районы</span>
-
-                <div class="dropdown-list__wrapper">
-                  <div class="districts-list">
-                    <label class="district-item">
-                      <input type="checkbox" value="Район 1" />
-                      <span>Район 1</span>
-                    </label>
-
-                    <label class="district-item">
-                      <input type="checkbox" value="Район 2" />
-                      <span>Район 2</span>
-                    </label>
-
-                    <label class="district-item">
-                      <input type="checkbox" value="Район 3" />
-                      <span>Район 3</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <button type="submit" class="filter__button">Показать 141 новостройку</button>
-          </form>
-        </div>
-      </section> -->
       <section class="catalog">
         <div class="catalog__wrapper">
           <ul class="catalog__body">
@@ -301,20 +290,31 @@
                   </div>
                 </div>
                 <div class="card__address">Турция Анталия</div>
-                <div class="card__info-wrapper">
-                  <div class="card__info">
+                <div class="card__info-wrapper bs-trigger" data-bs-target="card-info-1">
+                  <div class="bs-trigger__label card__info">
                     Площадь комплекса 3911 м2 2 блока 168 квартиры 1+1, 2+1 планировки. Квартиры сдаются с чистовой отделкой , Стальная входная дверь,
                     дизайнерские встроенные шкафы, ПВХ-дверями с двойным стеклопакетом, Подвесными потолками, Кухонными и бато-долапами, сантехникой высшего
                     класса и душевыми кабинками . В инфраструктуру входят Открытый бассейн, Игровые и спортивные зоны, Беседки для отдыха и Барбекю .
                     Круглосуточная охрана, Видеонаблюдение и современные лифты . Комплекс удобно расположен: от него до пляжа — 550 м, до ближайших магазинов —
                     550 м, до школы — 3 км, до медицинского центра — 6 км, до центра Мерсина — 27 км, до марины — 21,2 км. Срок сдачи: 06.2025
                   </div>
-                  <svg width="16" height="16">
+
+                  <svg class="bs-trigger__icon" width="16" height="16">
                     <path
                       d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
                       fill="#00000052"
-                    ></path>
+                    />
                   </svg>
+                </div>
+
+                <div class="bs-content" id="card-info-1">
+                  <p>
+                    Площадь комплекса 3911 м2 2 блока 168 квартиры 1+1, 2+1 планировки. Квартиры сдаются с чистовой отделкой , Стальная входная дверь,
+                    дизайнерские встроенные шкафы, ПВХ-дверями с двойным стеклопакетом, Подвесными потолками, Кухонными и бато-долапами, сантехникой высшего
+                    класса и душевыми кабинками . В инфраструктуру входят Открытый бассейн, Игровые и спортивные зоны, Беседки для отдыха и Барбекю .
+                    Круглосуточная охрана, Видеонаблюдение и современные лифты . Комплекс удобно расположен: от него до пляжа — 550 м, до ближайших магазинов —
+                    550 м, до школы — 3 км, до медицинского центра — 6 км, до центра Мерсина — 27 км, до марины — 21,2 км. Срок сдачи: 06.2025
+                  </p>
                 </div>
 
                 <div class="card__prices-table">
@@ -378,19 +378,29 @@
                   </div>
                 </div>
                 <div class="card__address">Турция Анталия</div>
-                <div class="card__info-wrapper">
-                  <div class="card__info">
+                <div class="card__info-wrapper bs-trigger" data-bs-target="card-info-2">
+                  <div class="bs-trigger__label card__info">
                     Площадь комплекса 7000 м2 350 квартиры 1+1, 2+1 планировки. Все квартиры сдаются с полной отделкой «turnkey» — готовой меблировкой,
                     кухонными гарнитурами и санфаянсом. В инфраструктуру входят открытый бассейн с аквапарком, фитнес‑центр, турецкая баня, сауна, детская
                     площадка, баскетбольная площадка, зоны отдыха с беседками и барбекю, круглосуточная охрана и система видеонаблюдения. Срок сдачи: 04.2025
                   </div>
-                  <svg width="16" height="16">
+
+                  <svg class="bs-trigger__icon" width="16" height="16">
                     <path
                       d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
                       fill="#00000052"
-                    ></path>
+                    />
                   </svg>
                 </div>
+
+                <div class="bs-content" id="card-info-2">
+                  <p>
+                    Площадь комплекса 7000 м2 350 квартиры 1+1, 2+1 планировки. Все квартиры сдаются с полной отделкой «turnkey» — готовой меблировкой,
+                    кухонными гарнитурами и санфаянсом. В инфраструктуру входят открытый бассейн с аквапарком, фитнес‑центр, турецкая баня, сауна, детская
+                    площадка, баскетбольная площадка, зоны отдыха с беседками и барбекю, круглосуточная охрана и система видеонаблюдения. Срок сдачи: 04.2025
+                  </p>
+                </div>
+
                 <div class="card__prices-table">
                   <div class="card__prices-row">
                     <span class="card__prices-content"> 1+1</span>
@@ -447,8 +457,8 @@
                   </div>
                 </div>
                 <div class="card__address">Турция Анталия</div>
-                <div class="card__info-wrapper">
-                  <div class="card__info">
+                <div class="card__info-wrapper bs-trigger" data-bs-target="card-info-3">
+                  <div class="bs-trigger__label card__info">
                     Площадь комплекса 5738 м2 2 блока 124 квартир 1+1, 2+1 и 3+1 планировки. Потолки высотой 3,10 м (в блоке A) и 2,80 м (в блоке B). Все
                     квартиры будут сдаваться с Чистовой отделкой, Встроенной кухонной техникой: варочная панель, вытяжка, Духовой шкаф и посудомоечная машина,
                     Центральное отоплением, Интеграцией систем "умный дом" и Энергоэффективное остекление, Инфраструктура включает Закрытый и Открытый бассейн,
@@ -456,13 +466,26 @@
                     в 2 км от набережной. В шаговой доступности также находятся ведущие университеты, а также престижные школы, Медицинская инфраструктура.
                     Рядом расположены знаковые достопримечательности. До аэропортов: 30 км. Срок сдачи: 09.2025
                   </div>
-                  <svg width="16" height="16">
+
+                  <svg class="bs-trigger__icon" width="16" height="16">
                     <path
                       d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
                       fill="#00000052"
-                    ></path>
+                    />
                   </svg>
                 </div>
+
+                <div class="bs-content" id="card-info-3">
+                  <p>
+                    Площадь комплекса 5738 м2 2 блока 124 квартир 1+1, 2+1 и 3+1 планировки. Потолки высотой 3,10 м (в блоке A) и 2,80 м (в блоке B). Все
+                    квартиры будут сдаваться с Чистовой отделкой, Встроенной кухонной техникой: варочная панель, вытяжка, Духовой шкаф и посудомоечная машина,
+                    Центральное отоплением, Интеграцией систем "умный дом" и Энергоэффективное остекление, Инфраструктура включает Закрытый и Открытый бассейн,
+                    Частную парковку, Фитнес и Социальные зоны, Лобби-услуги и 7/24 Охрану с видеонаблюдением. Расположен всего в 750 м от станции метро Fulya и
+                    в 2 км от набережной. В шаговой доступности также находятся ведущие университеты, а также престижные школы, Медицинская инфраструктура.
+                    Рядом расположены знаковые достопримечательности. До аэропортов: 30 км. Срок сдачи: 09.2025
+                  </p>
+                </div>
+
                 <div class="card__prices-table">
                   <div class="card__prices-row">
                     <span class="card__prices-content"> 1+1</span>
@@ -524,8 +547,8 @@
                   </div>
                 </div>
                 <div class="card__address">Турция Анталия</div>
-                <div class="card__info-wrapper">
-                  <div class="card__info">
+                <div class="card__info-wrapper bs-trigger" data-bs-target="card-info-4">
+                  <div class="bs-trigger__label card__info">
                     ВПлощадь комплекса 2392 м2 100 квартир 1+1, 2+1 и 3+1 с Высокими потолками, Просторными балконами и Панорамными окнами. В избранных
                     квартирах предусмотрены Частные бассейны. На территории комплекса доступны Фитнес-центр, Терраса с бассейном и зоной для загара, Турецкий
                     хамам, Римская парная, Сауна, Массажные кабинеты, Гастрономическая зона и Lounge-пространства. Для безопасности и удобства жильцов:
@@ -537,304 +560,17 @@
                     (Zorlu, Kanyon, Akmerkez), Двум мостам через Босфор и деловым центрам, Polat Levent Exclusive обеспечивает Исключительный уровень жизни и
                     Инвестиционную привлекательность.
                   </div>
-                  <svg width="16" height="16">
+
+                  <svg class="bs-trigger__icon" width="16" height="16">
                     <path
                       d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
                       fill="#00000052"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="card__prices-table">
-                  <div class="card__prices-row">
-                    <span class="card__prices-content"> 1+1</span>
-                    <span class="card__prices-content">82.14 кв.м </span>
-                    <span class="card__prices-content">881 280 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">1+1 duplex </span>
-                    <span class="card__prices-content">98 кв.м </span>
-                    <span class="card__prices-content">1 151 334 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">2+1 </span>
-                    <span class="card__prices-content">162.46 кв.м </span>
-                    <span class="card__prices-content">1 726 530 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">3+1 </span>
-                    <span class="card__prices-content">279 кв.м </span>
-                    <span class="card__prices-content">3 179 144 € </span>
-                  </div>
-                </div>
-
-                <div class="card__buttons">
-                  <a href="/" class="card__button card__button--details">Подробнее</a>
-                  <a href="/" class="card__button card__button--favorite">В избранное</a>
-                </div>
-              </div>
-            </li>
-            <li class="catalog__card card">
-              <div class="card__wrapper">
-                <div class="card__header">
-                  <div class="card__header-left">
-                    <h3 class="card__title">EMERALD ELEGANCE</h3>
-                    <div class="card__developer">Застройщик</div>
-                  </div>
-                  <a href="/" class="card__favorite">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-                <div class="card__img-wrapper">
-                  <div class="card__slider swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="images/house1.webp" class="card__img" />
-                        <ul class="card__tags">
-                          <li class="card__tag">Новостройка</li>
-                        </ul>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details12.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details13.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details14.webp" class="card__img" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card__address">Турция Анталия</div>
-                <div class="card__info-wrapper">
-                  <div class="card__info">
-                    Площадь комплекса 3911 м2 2 блока 168 квартиры 1+1, 2+1 планировки. Квартиры сдаются с чистовой отделкой , Стальная входная дверь,
-                    дизайнерские встроенные шкафы, ПВХ-дверями с двойным стеклопакетом, Подвесными потолками, Кухонными и бато-долапами, сантехникой высшего
-                    класса и душевыми кабинками . В инфраструктуру входят Открытый бассейн, Игровые и спортивные зоны, Беседки для отдыха и Барбекю .
-                    Круглосуточная охрана, Видеонаблюдение и современные лифты . Комплекс удобно расположен: от него до пляжа — 550 м, до ближайших магазинов —
-                    550 м, до школы — 3 км, до медицинского центра — 6 км, до центра Мерсина — 27 км, до марины — 21,2 км. Срок сдачи: 06.2025
-                  </div>
-                  <svg width="16" height="16">
-                    <path
-                      d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
-                      fill="#00000052"
-                    ></path>
+                    />
                   </svg>
                 </div>
 
-                <div class="card__prices-table">
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">1+1</span>
-                    <span class="card__prices-content">от 53 кв.м </span>
-                    <span class="card__prices-content">от 62 000 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">1+1 </span>
-                    <span class="card__prices-content">от 58 кв.м</span>
-                    <span class="card__prices-content">от 69 000 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">2+1 </span>
-                    <span class="card__prices-content">от 92 кв.м </span>
-                    <span class="card__prices-content">от 81 000 € </span>
-                  </div>
-                </div>
-
-                <div class="card__buttons">
-                  <a href="/" class="card__button card__button--details">Подробнее</a>
-                  <a href="/" class="card__button card__button--favorite">В избранное</a>
-                </div>
-              </div>
-            </li>
-            <li class="catalog__card card">
-              <div class="card__wrapper">
-                <div class="card__header">
-                  <div class="card__header-left">
-                    <h3 class="card__title">Aqua Marin</h3>
-                    <div class="card__developer">Застройщик</div>
-                  </div>
-                  <a href="/" class="card__favorite">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-                <div class="card__img-wrapper">
-                  <div class="card__slider swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="images/house2.webp" class="card__img" />
-                        <ul class="card__tags">
-                          <li class="card__tag">Новостройка</li>
-                        </ul>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details22.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details23.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details24.webp" class="card__img" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card__address">Турция Анталия</div>
-                <div class="card__info-wrapper">
-                  <div class="card__info">
-                    Площадь комплекса 7000 м2 350 квартиры 1+1, 2+1 планировки. Все квартиры сдаются с полной отделкой «turnkey» — готовой меблировкой,
-                    кухонными гарнитурами и санфаянсом. В инфраструктуру входят открытый бассейн с аквапарком, фитнес‑центр, турецкая баня, сауна, детская
-                    площадка, баскетбольная площадка, зоны отдыха с беседками и барбекю, круглосуточная охрана и система видеонаблюдения. Срок сдачи: 04.2025
-                  </div>
-                  <svg width="16" height="16">
-                    <path
-                      d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
-                      fill="#00000052"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="card__prices-table">
-                  <div class="card__prices-row">
-                    <span class="card__prices-content"> 1+1</span>
-                    <span class="card__prices-content">65 кв.м </span>
-                    <span class="card__prices-content">57 000 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content"> 2+1 </span>
-                    <span class="card__prices-content">120 кв.м </span>
-                    <span class="card__prices-content">105 000 € </span>
-                  </div>
-                </div>
-
-                <div class="card__buttons">
-                  <a href="/" class="card__button card__button--details">Подробнее</a>
-                  <a href="/" class="card__button card__button--favorite">В избранное</a>
-                </div>
-              </div>
-            </li>
-            <li class="catalog__card card">
-              <div class="card__wrapper">
-                <div class="card__header">
-                  <div class="card__header-left">
-                    <h3 class="card__title">PIYALEPASA PREMIUM</h3>
-                    <div class="card__developer">Застройщик</div>
-                  </div>
-                  <a href="/" class="card__favorite">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-                <div class="card__img-wrapper">
-                  <div class="card__slider swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="images/house3.webp" class="card__img" />
-                        <ul class="card__tags">
-                          <li class="card__tag">Новостройка</li>
-                        </ul>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details32.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details33.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details34.webp" class="card__img" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card__address">Турция Анталия</div>
-                <div class="card__info-wrapper">
-                  <div class="card__info">
-                    Площадь комплекса 5738 м2 2 блока 124 квартир 1+1, 2+1 и 3+1 планировки. Потолки высотой 3,10 м (в блоке A) и 2,80 м (в блоке B). Все
-                    квартиры будут сдаваться с Чистовой отделкой, Встроенной кухонной техникой: варочная панель, вытяжка, Духовой шкаф и посудомоечная машина,
-                    Центральное отоплением, Интеграцией систем "умный дом" и Энергоэффективное остекление, Инфраструктура включает Закрытый и Открытый бассейн,
-                    Частную парковку, Фитнес и Социальные зоны, Лобби-услуги и 7/24 Охрану с видеонаблюдением. Расположен всего в 750 м от станции метро Fulya и
-                    в 2 км от набережной. В шаговой доступности также находятся ведущие университеты, а также престижные школы, Медицинская инфраструктура.
-                    Рядом расположены знаковые достопримечательности. До аэропортов: 30 км. Срок сдачи: 09.2025
-                  </div>
-                  <svg width="16" height="16">
-                    <path
-                      d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
-                      fill="#00000052"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="card__prices-table">
-                  <div class="card__prices-row">
-                    <span class="card__prices-content"> 1+1</span>
-                    <span class="card__prices-content">72.84 кв.м </span>
-                    <span class="card__prices-content">499 153 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">1+1 </span>
-                    <span class="card__prices-content">90.98 кв.м </span>
-                    <span class="card__prices-content">725 934 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content"> 2+1 </span>
-                    <span class="card__prices-content">129.19 кв.м </span>
-                    <span class="card__prices-content">931 689 € </span>
-                  </div>
-                </div>
-
-                <div class="card__buttons">
-                  <a href="/" class="card__button card__button--details">Подробнее</a>
-                  <a href="/" class="card__button card__button--favorite">В избранное</a>
-                </div>
-              </div>
-            </li>
-            <li class="catalog__card card">
-              <div class="card__wrapper">
-                <div class="card__header">
-                  <div class="card__header-left">
-                    <h3 class="card__title">Polat Levent Exclusive</h3>
-                    <div class="card__developer">Застройщик</div>
-                  </div>
-                  <a href="/" class="card__favorite">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-                <div class="card__img-wrapper">
-                  <div class="card__slider swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="images/house4.webp" class="card__img" />
-                        <ul class="card__tags">
-                          <li class="card__tag">Новостройка</li>
-                        </ul>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details42.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details43.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details44.webp" class="card__img" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card__address">Турция Анталия</div>
-                <div class="card__info-wrapper">
-                  <div class="card__info">
+                <div class="bs-content" id="card-info-4">
+                  <p>
                     ВПлощадь комплекса 2392 м2 100 квартир 1+1, 2+1 и 3+1 с Высокими потолками, Просторными балконами и Панорамными окнами. В избранных
                     квартирах предусмотрены Частные бассейны. На территории комплекса доступны Фитнес-центр, Терраса с бассейном и зоной для загара, Турецкий
                     хамам, Римская парная, Сауна, Массажные кабинеты, Гастрономическая зона и Lounge-пространства. Для безопасности и удобства жильцов:
@@ -845,323 +581,9 @@
                     и первоклассной сантехникой. Все помещения подготовлены под Умный дом и снабжены Слаботочными системами. Благодаря Близости к ведущим ТЦ
                     (Zorlu, Kanyon, Akmerkez), Двум мостам через Босфор и деловым центрам, Polat Levent Exclusive обеспечивает Исключительный уровень жизни и
                     Инвестиционную привлекательность.
-                  </div>
-                  <svg width="16" height="16">
-                    <path
-                      d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
-                      fill="#00000052"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="card__prices-table">
-                  <div class="card__prices-row">
-                    <span class="card__prices-content"> 1+1</span>
-                    <span class="card__prices-content">82.14 кв.м </span>
-                    <span class="card__prices-content">881 280 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">1+1 duplex </span>
-                    <span class="card__prices-content">98 кв.м </span>
-                    <span class="card__prices-content">1 151 334 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">2+1 </span>
-                    <span class="card__prices-content">162.46 кв.м </span>
-                    <span class="card__prices-content">1 726 530 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">3+1 </span>
-                    <span class="card__prices-content">279 кв.м </span>
-                    <span class="card__prices-content">3 179 144 € </span>
-                  </div>
+                  </p>
                 </div>
 
-                <div class="card__buttons">
-                  <a href="/" class="card__button card__button--details">Подробнее</a>
-                  <a href="/" class="card__button card__button--favorite">В избранное</a>
-                </div>
-              </div>
-            </li>
-            <li class="catalog__card card">
-              <div class="card__wrapper">
-                <div class="card__header">
-                  <div class="card__header-left">
-                    <h3 class="card__title">EMERALD ELEGANCE</h3>
-                    <div class="card__developer">Застройщик</div>
-                  </div>
-                  <a href="/" class="card__favorite">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-                <div class="card__img-wrapper">
-                  <div class="card__slider swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="images/house1.webp" class="card__img" />
-                        <ul class="card__tags">
-                          <li class="card__tag">Новостройка</li>
-                        </ul>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details12.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details13.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details14.webp" class="card__img" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card__address">Турция Анталия</div>
-                <div class="card__info-wrapper">
-                  <div class="card__info">
-                    Площадь комплекса 3911 м2 2 блока 168 квартиры 1+1, 2+1 планировки. Квартиры сдаются с чистовой отделкой , Стальная входная дверь,
-                    дизайнерские встроенные шкафы, ПВХ-дверями с двойным стеклопакетом, Подвесными потолками, Кухонными и бато-долапами, сантехникой высшего
-                    класса и душевыми кабинками . В инфраструктуру входят Открытый бассейн, Игровые и спортивные зоны, Беседки для отдыха и Барбекю .
-                    Круглосуточная охрана, Видеонаблюдение и современные лифты . Комплекс удобно расположен: от него до пляжа — 550 м, до ближайших магазинов —
-                    550 м, до школы — 3 км, до медицинского центра — 6 км, до центра Мерсина — 27 км, до марины — 21,2 км. Срок сдачи: 06.2025
-                  </div>
-                  <svg width="16" height="16">
-                    <path
-                      d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
-                      fill="#00000052"
-                    ></path>
-                  </svg>
-                </div>
-
-                <div class="card__prices-table">
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">1+1</span>
-                    <span class="card__prices-content">от 53 кв.м </span>
-                    <span class="card__prices-content">от 62 000 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">1+1 </span>
-                    <span class="card__prices-content">от 58 кв.м</span>
-                    <span class="card__prices-content">от 69 000 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">2+1 </span>
-                    <span class="card__prices-content">от 92 кв.м </span>
-                    <span class="card__prices-content">от 81 000 € </span>
-                  </div>
-                </div>
-
-                <div class="card__buttons">
-                  <a href="/" class="card__button card__button--details">Подробнее</a>
-                  <a href="/" class="card__button card__button--favorite">В избранное</a>
-                </div>
-              </div>
-            </li>
-            <li class="catalog__card card">
-              <div class="card__wrapper">
-                <div class="card__header">
-                  <div class="card__header-left">
-                    <h3 class="card__title">Aqua Marin</h3>
-                    <div class="card__developer">Застройщик</div>
-                  </div>
-                  <a href="/" class="card__favorite">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-                <div class="card__img-wrapper">
-                  <div class="card__slider swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="images/house2.webp" class="card__img" />
-                        <ul class="card__tags">
-                          <li class="card__tag">Новостройка</li>
-                        </ul>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details22.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details23.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details24.webp" class="card__img" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card__address">Турция Анталия</div>
-                <div class="card__info-wrapper">
-                  <div class="card__info">
-                    Площадь комплекса 7000 м2 350 квартиры 1+1, 2+1 планировки. Все квартиры сдаются с полной отделкой «turnkey» — готовой меблировкой,
-                    кухонными гарнитурами и санфаянсом. В инфраструктуру входят открытый бассейн с аквапарком, фитнес‑центр, турецкая баня, сауна, детская
-                    площадка, баскетбольная площадка, зоны отдыха с беседками и барбекю, круглосуточная охрана и система видеонаблюдения. Срок сдачи: 04.2025
-                  </div>
-                  <svg width="16" height="16">
-                    <path
-                      d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
-                      fill="#00000052"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="card__prices-table">
-                  <div class="card__prices-row">
-                    <span class="card__prices-content"> 1+1</span>
-                    <span class="card__prices-content">65 кв.м </span>
-                    <span class="card__prices-content">57 000 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content"> 2+1 </span>
-                    <span class="card__prices-content">120 кв.м </span>
-                    <span class="card__prices-content">105 000 € </span>
-                  </div>
-                </div>
-
-                <div class="card__buttons">
-                  <a href="/" class="card__button card__button--details">Подробнее</a>
-                  <a href="/" class="card__button card__button--favorite">В избранное</a>
-                </div>
-              </div>
-            </li>
-            <li class="catalog__card card">
-              <div class="card__wrapper">
-                <div class="card__header">
-                  <div class="card__header-left">
-                    <h3 class="card__title">PIYALEPASA PREMIUM</h3>
-                    <div class="card__developer">Застройщик</div>
-                  </div>
-                  <a href="/" class="card__favorite">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-                <div class="card__img-wrapper">
-                  <div class="card__slider swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="images/house3.webp" class="card__img" />
-                        <ul class="card__tags">
-                          <li class="card__tag">Новостройка</li>
-                        </ul>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details32.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details33.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details34.webp" class="card__img" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card__address">Турция Анталия</div>
-                <div class="card__info-wrapper">
-                  <div class="card__info">
-                    Площадь комплекса 5738 м2 2 блока 124 квартир 1+1, 2+1 и 3+1 планировки. Потолки высотой 3,10 м (в блоке A) и 2,80 м (в блоке B). Все
-                    квартиры будут сдаваться с Чистовой отделкой, Встроенной кухонной техникой: варочная панель, вытяжка, Духовой шкаф и посудомоечная машина,
-                    Центральное отоплением, Интеграцией систем "умный дом" и Энергоэффективное остекление, Инфраструктура включает Закрытый и Открытый бассейн,
-                    Частную парковку, Фитнес и Социальные зоны, Лобби-услуги и 7/24 Охрану с видеонаблюдением. Расположен всего в 750 м от станции метро Fulya и
-                    в 2 км от набережной. В шаговой доступности также находятся ведущие университеты, а также престижные школы, Медицинская инфраструктура.
-                    Рядом расположены знаковые достопримечательности. До аэропортов: 30 км. Срок сдачи: 09.2025
-                  </div>
-                  <svg width="16" height="16">
-                    <path
-                      d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
-                      fill="#00000052"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="card__prices-table">
-                  <div class="card__prices-row">
-                    <span class="card__prices-content"> 1+1</span>
-                    <span class="card__prices-content">72.84 кв.м </span>
-                    <span class="card__prices-content">499 153 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content">1+1 </span>
-                    <span class="card__prices-content">90.98 кв.м </span>
-                    <span class="card__prices-content">725 934 € </span>
-                  </div>
-                  <div class="card__prices-row">
-                    <span class="card__prices-content"> 2+1 </span>
-                    <span class="card__prices-content">129.19 кв.м </span>
-                    <span class="card__prices-content">931 689 € </span>
-                  </div>
-                </div>
-
-                <div class="card__buttons">
-                  <a href="/" class="card__button card__button--details">Подробнее</a>
-                  <a href="/" class="card__button card__button--favorite">В избранное</a>
-                </div>
-              </div>
-            </li>
-            <li class="catalog__card card">
-              <div class="card__wrapper">
-                <div class="card__header">
-                  <div class="card__header-left">
-                    <h3 class="card__title">Polat Levent Exclusive</h3>
-                    <div class="card__developer">Застройщик</div>
-                  </div>
-                  <a href="/" class="card__favorite">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path
-                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                      ></path>
-                    </svg>
-                  </a>
-                </div>
-                <div class="card__img-wrapper">
-                  <div class="card__slider swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="images/house4.webp" class="card__img" />
-                        <ul class="card__tags">
-                          <li class="card__tag">Новостройка</li>
-                        </ul>
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details42.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details43.webp" class="card__img" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="images/details44.webp" class="card__img" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card__address">Турция Анталия</div>
-                <div class="card__info-wrapper">
-                  <div class="card__info">
-                    ВПлощадь комплекса 2392 м2 100 квартир 1+1, 2+1 и 3+1 с Высокими потолками, Просторными балконами и Панорамными окнами. В избранных
-                    квартирах предусмотрены Частные бассейны. На территории комплекса доступны Фитнес-центр, Терраса с бассейном и зоной для загара, Турецкий
-                    хамам, Римская парная, Сауна, Массажные кабинеты, Гастрономическая зона и Lounge-пространства. Для безопасности и удобства жильцов:
-                    Круглосуточная охрана, Видеонаблюдение, Закрытая парковка с системой Автоматического въезда, Генератор, Зоны хранения и Помещения для
-                    велосипедов. В строительстве применяются только Сертифицированные материалы: Радиально армированный фундамент, Звуко- и теплоизоляция,
-                    Ламинированные стеклопакеты с защитой от УФ, Центральное отопление и система VRV-кондиционирования. Интерьеры оформлены с применением 1-го
-                    класса Материалов — Натуральный паркет, Керамика, Стальные двери, Кухни с Мембранными фасадами и Встроенной техникой, Ванные с Walk-in душем
-                    и первоклассной сантехникой. Все помещения подготовлены под Умный дом и снабжены Слаботочными системами. Благодаря Близости к ведущим ТЦ
-                    (Zorlu, Kanyon, Akmerkez), Двум мостам через Босфор и деловым центрам, Polat Levent Exclusive обеспечивает Исключительный уровень жизни и
-                    Инвестиционную привлекательность.
-                  </div>
-                  <svg width="16" height="16">
-                    <path
-                      d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
-                      fill="#00000052"
-                    ></path>
-                  </svg>
-                </div>
                 <div class="card__prices-table">
                   <div class="card__prices-row">
                     <span class="card__prices-content"> 1+1</span>
@@ -1344,11 +766,12 @@
         <span>На карте</span>
       </a>
     </dev>
-    <div class="bottom-sheet" id="textSheet">
-      <div class="bottom-sheet__overlay"></div>
-      <div class="bottom-sheet__panel">
-        <div class="bottom-sheet__handle"></div>
-        <div class="bottom-sheet__content"></div>
+    <div class="bs" id="textSheet">
+      <div class="bs__overlay"></div>
+
+      <div class="bs__panel">
+        <div class="bs__handle"></div>
+        <div class="bs__content"></div>
       </div>
     </div>
   </body>
