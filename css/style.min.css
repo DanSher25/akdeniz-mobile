@@ -506,7 +506,6 @@ html {
 body {
   -webkit-font-feature-settings: "liga", "kern", "pnum" on, "lnum" on;
   font-feature-settings: "liga", "kern", "pnum" on, "lnum" on;
-  background-color: #f3f1f1;
 }
 
 a {
