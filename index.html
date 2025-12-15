@@ -137,37 +137,84 @@
     </header>
 
     <main class="main">
-      <section class="catalog-header">
-        <div class="catalog-header__wrapper container">
-          <h2 class="catalog-header__title">Недвижимость в регионе Анталия</h2>
-          <div class="catalog-header filter">
-            <div class="filter__wrapper">
-              <div class="filter__element filter__all">
-                <div class="filter__amount">
-                  <svg width="16" height="16">
+      <h2 class="catalog-header__title container">Недвижимость в регионе Анталия</h2>
+      <div class="sticky-sentinel"></div>
+      <div class="filter filter__sticky container">
+        <div class="filter__scroll">
+          <div class="filter__wrapper">
+            <div class="filter__element filter__all bs-trigger" data-bs-target="all" data-bs-mode="full">
+              <div class="filter__amount">
+                <svg width="16" height="16">
+                  <path
+                    d="M10.5 7.2A3.201 3.201 0 017.46 5H1a1 1 0 010-2h6.46a3.201 3.201 0 016.08 0H15a1 1 0 110 2h-1.46a3.201 3.201 0 01-3.04 2.2zM1 11a1 1 0 000 2h1.46a3.201 3.201 0 006.08 0H15a1 1 0 100-2H8.54a3.201 3.201 0 00-6.08 0H1zm5.9 1a1.4 1.4 0 11-2.8 0 1.4 1.4 0 012.8 0zm5-8a1.4 1.4 0 10-2.8 0 1.4 1.4 0 002.8 0z"
+                    fill="currentColor"
+                    fill-opacity=".92"
+                  ></path>
+                </svg>
+                <span class="filter__amount-value"></span>
+              </div>
+              <div class="filter__label">Фильтры</div>
+              <div class="bs-content" id="all">
+                <div class="filter__all-header">
+                  <svg class="bs__close" width="24" height="24">
                     <path
-                      d="M10.5 7.2A3.201 3.201 0 017.46 5H1a1 1 0 010-2h6.46a3.201 3.201 0 016.08 0H15a1 1 0 110 2h-1.46a3.201 3.201 0 01-3.04 2.2zM1 11a1 1 0 000 2h1.46a3.201 3.201 0 006.08 0H15a1 1 0 100-2H8.54a3.201 3.201 0 00-6.08 0H1zm5.9 1a1.4 1.4 0 11-2.8 0 1.4 1.4 0 012.8 0zm5-8a1.4 1.4 0 10-2.8 0 1.4 1.4 0 002.8 0z"
+                      d="M5.707 4.293a1 1 0 00-1.414 1.414l6.364 6.364-6.364 6.364a1 1 0 101.414 1.414l6.364-6.364 6.364 6.364a1 1 0 101.414-1.414l-6.364-6.364 6.364-6.364a1 1 0 10-1.414-1.414l-6.364 6.364-6.364-6.364z"
                       fill="currentColor"
-                      fill-opacity=".92"
                     ></path>
                   </svg>
+                  <button class="filter__all-reset">Сбросить</button>
                 </div>
-                <div class="filter__label">Фильтры</div>
-              </div>
-              <div class="filter__element filter__price bs-trigger" data-bs-target="card-price">
-                <div class="bs-trigger__label filter__label">цена</div>
-                <svg class="bs-trigger__icon" width="16" height="16">
-                  <path d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z" />
-                </svg>
 
-                <div class="bs-content" id="card-price">
-                  <div class="bs-content__title">Цена, ₽</div>
+                <div class="bs-content__section">
+                  <div class="filter__property-type property-type">
+                    <label class="property-type__item">
+                      <input class="property-type__input" type="radio" name="property_type" value="new" />
+                      <span class="property-type__pill">Новостройки</span>
+                    </label>
+
+                    <label class="property-type__item">
+                      <input class="property-type__input" type="radio" name="property_type" value="secondary" />
+                      <span class="property-type__pill">Вторичка</span>
+                    </label>
+
+                    <label class="property-type__item">
+                      <input class="property-type__input" type="radio" name="property_type" value="commercial" />
+                      <span class="property-type__pill">Коммерческая</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="bs-content__section">
+                  <div class="filter__rooms-list">
+                    <label class="filter__room">
+                      <input class="filter__room-input" type="checkbox" name="rooms[]" value="studio" />
+                      <span class="filter__room-pill">Студия</span>
+                    </label>
+                    <label class="filter__room">
+                      <input class="filter__room-input" type="checkbox" name="rooms[]" value="1" />
+                      <span class="filter__room-pill">1</span>
+                    </label>
+                    <label class="filter__room">
+                      <input class="filter__room-input" type="checkbox" name="rooms[]" value="2" />
+                      <span class="filter__room-pill">2</span>
+                    </label>
+                    <label class="filter__room">
+                      <input class="filter__room-input" type="checkbox" name="rooms[]" value="3" />
+                      <span class="filter__room-pill">3</span>
+                    </label>
+                    <label class="filter__room">
+                      <input class="filter__room-input" type="checkbox" name="rooms[]" value="4plus" />
+                      <span class="filter__room-pill">4+</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="filter__all-price">
+                  <div class="filter__all-title">Цена, ₽</div>
                   <div class="filter__switch filter-switch" data-switch>
                     <button class="filter-switch__item is-active" data-value="total">За всё</button>
                     <button class="filter-switch__item" data-value="m2">За м²</button>
                     <div class="filter-switch__color"></div>
                   </div>
-                  <input type="hidden" name="price_type" value="total" id="priceType" />
+                  <input type="hidden" name="price_type" value="total" id="priceTypeAll" />
                   <div class="filter__prices">
                     <div class="filter__price-field">
                       <span class="filter__price-label">от</span>
@@ -178,77 +225,376 @@
                       <input type="text" name="price_top" class="filter__price-input" />
                     </div>
                   </div>
+                </div>
+                <div class="districts">
+                  <div class="filter__all-title">Районы</div>
+                  <div class="districts__list">
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Дзержинский район" />
+                      <span class="districts__name">Дзержинский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
 
-                  <a href="/" class="filter__show-btn">Показать 5 338 предложений</a>
-                </div>
-              </div>
-              <div class="filter__element filter__disctrict bs-trigger" data-bs-target="card-district">
-                <div class="bs-trigger__label filter__label">Район</div>
-                <svg class="bs-trigger__icon" width="16" height="16">
-                  <path
-                    d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-                <div class="bs-content" id="card-district">
-                  <div class="bs-content__title">Район</div>
-                  <!-- <div class="filter__checkbox-list">
-                    <input type="checbox" name="district" class="filter__checbox-item" />
-                  </div> -->
-                  <a href="/" class="filter__show-btn">Показать 5 338 предложений</a>
-                </div>
-              </div>
-              <div class="filter__element filter__rooms bs-trigger" data-bs-target="card-rooms">
-                <div class="bs-trigger__label filter__label">Комнаты</div>
-                <svg class="bs-trigger__icon filter__label" width="16" height="16">
-                  <path
-                    d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-                <div class="bs-content" id="card-rooms">
-                  <div class="bs-content__title">Комнаты</div>
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Заволжский район" />
+                      <span class="districts__name">Заволжский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
 
-                  <a href="/" class="filter__show-btn">Показать 5 338 предложений</a>
-                </div>
-              </div>
-              <div class="filter__element filter__regions bs-trigger" data-bs-target="card-region">
-                <div class="bs-trigger__label filter__label">Регион</div>
-                <svg class="bs-trigger__icon filter__label" width="16" height="16">
-                  <path
-                    d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-                <div class="bs-content" id="card-region">
-                  <div class="bs-content__title">Регион</div>
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Кировский район" />
+                      <span class="districts__name">Кировский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
 
-                  <a href="/" class="filter__show-btn">Показать 5 338 предложений</a>
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Красноперекопский район" />
+                      <span class="districts__name">Красноперекопский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Ленинский район" />
+                      <span class="districts__name">Ленинский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Фрунзенский район" />
+                      <span class="districts__name">Фрунзенский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+                  </div>
                 </div>
+                <div class="districts">
+                  <div class="filter__all-title">Регион</div>
+                  <div class="districts__list">
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Все регионы" />
+                      <span class="districts__name">Все регионы</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Аланья" />
+                      <span class="districts__name">Аланья</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Анталия" />
+                      <span class="districts__name">Анталия</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Серик (Белек)" />
+                      <span class="districts__name">Серик (Белек)</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Кемер" />
+                      <span class="districts__name">Кемер</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Финике" />
+                      <span class="districts__name">Финике</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Газипаша" />
+                      <span class="districts__name">Газипаша</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Мерсин" />
+                      <span class="districts__name">Мерсин</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Стамбул" />
+                      <span class="districts__name">Стамбул</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Манавгат (Сиде)" />
+                      <span class="districts__name">Манавгат (Сиде)</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Бодрум" />
+                      <span class="districts__name">Бодрум</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Фетхие" />
+                      <span class="districts__name">Фетхие</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+                  </div>
+                </div>
+
+                <a href="/" class="filter__show-btn">Показать 5 338 предложений</a>
               </div>
             </div>
-          </div>
-          <div class="catalog-header__sort-wrapper">
-            <div class="catalog-header__results-amount">143 новостройки</div>
-            <div class="catalog-header__sort dropdown-list">
-              <span class="catalog-header__sort-text dropdown-list__text">По актуальности</span>
-              <svg width="16" height="16">
+            <div class="filter__element filter__price bs-trigger" data-bs-target="card-price">
+              <div class="bs-trigger__label filter__label">цена</div>
+              <svg class="bs-trigger__icon" width="16" height="16">
+                <path d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z" />
+              </svg>
+
+              <div class="bs-content" id="card-price">
+                <div class="bs-content__title">Цена, ₽</div>
+                <div class="filter__switch filter-switch" data-switch>
+                  <button class="filter-switch__item is-active" data-value="total">За всё</button>
+                  <button class="filter-switch__item" data-value="m2">За м²</button>
+                  <div class="filter-switch__color"></div>
+                </div>
+                <input type="hidden" name="price_type" value="total" id="priceType" />
+                <div class="filter__prices">
+                  <div class="filter__price-field">
+                    <span class="filter__price-label">от</span>
+                    <input type="text" name="price_from" class="filter__price-input" />
+                  </div>
+                  <div class="filter__price-field">
+                    <span class="filter__price-label">до</span>
+                    <input type="text" name="price_top" class="filter__price-input" />
+                  </div>
+                </div>
+
+                <a href="/" class="filter__show-btn">Показать 5 338 предложений</a>
+              </div>
+            </div>
+            <div class="filter__element filter__disctrict bs-trigger" data-bs-target="card-district" data-bs-mode="full">
+              <div class="bs-trigger__label filter__label">Район</div>
+              <svg class="bs-trigger__icon" width="16" height="16">
                 <path
                   d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
                   fill="currentColor"
                 ></path>
               </svg>
-              <div class="catalog-header__sort-dropdown dropdown-list__wrapper">
-                <div class="catalog-header__sort-list dropdown-list__list">
-                  <a href="/" class="dropdown-list__dropdown-item">По актуальности</a>
-                  <a href="/" class="dropdown-list__dropdown-item">Цена по возрастанию</a>
-                  <a href="/" class="dropdown-list__dropdown-item">По сроку сдачи</a>
+              <div class="bs-content" id="card-district">
+                <div class="filter__disctrict-wrapper districts">
+                  <div class="districts__header">
+                    <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="17" height="16" class="bs__close">
+                      <path
+                        d="M8.70715 1.70711C9.09766 1.31658 9.09766 0.68342 8.70715 0.292894C8.31653 -0.0976315 7.68347 -0.0976315 7.29285 0.292894L0.292847 7.29291C0.105347 7.48045 0 7.7348 0 8.00002C0 8.26523 0.105347 8.51959 0.292847 8.70712L7.29285 15.7071C7.68335 16.0976 8.31653 16.0976 8.70703 15.7071C9.09766 15.3166 9.09766 14.6834 8.70703 14.2929L3.41418 9H15.9999C16.5521 9 16.9999 8.55229 16.9999 8C16.9999 7.44772 16.5521 7 15.9999 7H3.41418L8.70715 1.70711Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <input type="text" class="districts__search" placeholder="Название района" />
+                  </div>
+                  <button type="button" class="districts__reset">Сбросить все</button>
+
+                  <div class="districts__list">
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Дзержинский район" />
+                      <span class="districts__name">Дзержинский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Заволжский район" />
+                      <span class="districts__name">Заволжский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Кировский район" />
+                      <span class="districts__name">Кировский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Красноперекопский район" />
+                      <span class="districts__name">Красноперекопский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Ленинский район" />
+                      <span class="districts__name">Ленинский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Фрунзенский район" />
+                      <span class="districts__name">Фрунзенский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+                  </div>
                 </div>
+                <a href="/" class="filter__show-btn">Показать 5 338 предложений</a>
+              </div>
+            </div>
+            <div class="filter__element filter__rooms bs-trigger" data-bs-target="card-rooms">
+              <div class="bs-trigger__label filter__label">Комнаты</div>
+              <svg class="bs-trigger__icon filter__label" width="16" height="16">
+                <path
+                  d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <div class="bs-content" id="card-rooms">
+                <div class="bs-content__title">Количество комнат</div>
+                <div class="filter__rooms-list">
+                  <label class="filter__room">
+                    <input class="filter__room-input" type="checkbox" name="rooms[]" value="studio" />
+                    <span class="filter__room-pill">Студия</span>
+                  </label>
+
+                  <label class="filter__room">
+                    <input class="filter__room-input" type="checkbox" name="rooms[]" value="1" />
+                    <span class="filter__room-pill">1</span>
+                  </label>
+
+                  <label class="filter__room">
+                    <input class="filter__room-input" type="checkbox" name="rooms[]" value="2" />
+                    <span class="filter__room-pill">2</span>
+                  </label>
+
+                  <label class="filter__room">
+                    <input class="filter__room-input" type="checkbox" name="rooms[]" value="3" />
+                    <span class="filter__room-pill">3</span>
+                  </label>
+
+                  <label class="filter__room">
+                    <input class="filter__room-input" type="checkbox" name="rooms[]" value="4plus" />
+                    <span class="filter__room-pill">4+</span>
+                  </label>
+                </div>
+
+                <a href="/" class="filter__show-btn">Показать 5 338 предложений</a>
+              </div>
+            </div>
+            <div class="filter__element filter__regions bs-trigger" data-bs-target="card-region" data-bs-mode="full">
+              <div class="bs-trigger__label filter__label">Регион</div>
+              <svg class="bs-trigger__icon filter__label" width="16" height="16">
+                <path
+                  d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <div class="bs-content" id="card-region">
+                <div class="filter__disctrict-wrapper districts">
+                  <div class="districts__header">
+                    <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="17" height="16" class="bs__close">
+                      <path
+                        d="M8.70715 1.70711C9.09766 1.31658 9.09766 0.68342 8.70715 0.292894C8.31653 -0.0976315 7.68347 -0.0976315 7.29285 0.292894L0.292847 7.29291C0.105347 7.48045 0 7.7348 0 8.00002C0 8.26523 0.105347 8.51959 0.292847 8.70712L7.29285 15.7071C7.68335 16.0976 8.31653 16.0976 8.70703 15.7071C9.09766 15.3166 9.09766 14.6834 8.70703 14.2929L3.41418 9H15.9999C16.5521 9 16.9999 8.55229 16.9999 8C16.9999 7.44772 16.5521 7 15.9999 7H3.41418L8.70715 1.70711Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <input type="text" class="districts__search" placeholder="Название района" />
+                  </div>
+
+                  <div class="districts__list">
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Все регионы" />
+                      <span class="districts__name">Все регионы</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Аланья" />
+                      <span class="districts__name">Аланья</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Анталия" />
+                      <span class="districts__name">Анталия</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Серик (Белек)" />
+                      <span class="districts__name">Серик (Белек)</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Кемер" />
+                      <span class="districts__name">Кемер</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Финике" />
+                      <span class="districts__name">Финике</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Газипаша" />
+                      <span class="districts__name">Газипаша</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Мерсин" />
+                      <span class="districts__name">Мерсин</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Стамбул" />
+                      <span class="districts__name">Стамбул</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Манавгат (Сиде)" />
+                      <span class="districts__name">Манавгат (Сиде)</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Бодрум" />
+                      <span class="districts__name">Бодрум</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Фетхие" />
+                      <span class="districts__name">Фетхие</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+                  </div>
+                </div>
+                <a href="/" class="filter__show-btn">Показать 5 338 предложений</a>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="catalog-header__sort-wrapper container">
+        <div class="catalog-header__results-amount">143 новостройки</div>
+        <div class="catalog-header__sort dropdown-list">
+          <span class="catalog-header__sort-text dropdown-list__text">По актуальности</span>
+          <svg width="16" height="16">
+            <path
+              d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <div class="catalog-header__sort-dropdown dropdown-list__wrapper">
+            <div class="catalog-header__sort-list dropdown-list__list">
+              <a href="/" class="dropdown-list__dropdown-item">По актуальности</a>
+              <a href="/" class="dropdown-list__dropdown-item">Цена по возрастанию</a>
+              <a href="/" class="dropdown-list__dropdown-item">По сроку сдачи</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section class="catalog">
         <div class="catalog__wrapper">
@@ -772,6 +1118,13 @@
       <div class="bs__panel">
         <div class="bs__handle"></div>
         <div class="bs__content"></div>
+      </div>
+    </div>
+    <div class="modal" id="filtersModal">
+      <div class="modal__overlay" data-modal-close></div>
+
+      <div class="modal__panel" role="dialog" aria-modal="true">
+        <div class="modal__content"></div>
       </div>
     </div>
   </body>
