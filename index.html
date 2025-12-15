@@ -218,11 +218,11 @@
                   <div class="filter__prices">
                     <div class="filter__price-field">
                       <span class="filter__price-label">от</span>
-                      <input type="text" name="price_from" class="filter__price-input" />
+                      <input type="text" name="price_from" inputmode="numeric" class="filter__price-input" />
                     </div>
                     <div class="filter__price-field">
                       <span class="filter__price-label">до</span>
-                      <input type="text" name="price_top" class="filter__price-input" />
+                      <input type="text" name="price_top" inputmode="numeric" class="filter__price-input" />
                     </div>
                   </div>
                 </div>
@@ -363,11 +363,11 @@
                 <div class="filter__prices">
                   <div class="filter__price-field">
                     <span class="filter__price-label">от</span>
-                    <input type="text" name="price_from" class="filter__price-input" />
+                    <input type="text" name="price_from" inputmode="numeric" class="filter__price-input" />
                   </div>
                   <div class="filter__price-field">
                     <span class="filter__price-label">до</span>
-                    <input type="text" name="price_top" class="filter__price-input" />
+                    <input type="text" name="price_top" inputmode="numeric" class="filter__price-input" />
                   </div>
                 </div>
 
@@ -967,7 +967,7 @@
       <div class="footer__outer">
         <div class="footer__wrapper container">
           <div class="footer__columns">
-            <ul class="footer__column accordion">
+            <div class="footer__column accordion">
               <div class="footer__column-header accordion__trigger">
                 <div class="footer__column-title">Регионы</div>
                 <svg width="16" height="16">
@@ -993,8 +993,8 @@
                   </div>
                 </div>
               </div>
-            </ul>
-            <ul class="footer__column accordion">
+            </div>
+            <div class="footer__column accordion">
               <div class="footer__column-header accordion__trigger">
                 <div class="footer__column-title">Районы</div>
                 <svg width="16" height="16">
@@ -1020,9 +1020,9 @@
                   </div>
                 </div>
               </div>
-            </ul>
+            </div>
 
-            <ul class="footer__column accordion">
+            <div class="footer__column accordion">
               <div class="footer__column-header accordion__trigger">
                 <div class="footer__column-title">Тип</div>
                 <svg width="16" height="16">
@@ -1045,10 +1045,11 @@
                   </div>
                 </div>
               </div>
-            </ul>
-            <ul class="footer__column accordion">
+            </div>
+            <div class="footer__column accordion">
               <div class="footer__column-header accordion__trigger">
                 <div class="footer__column-title">Комнатность</div>
+
                 <svg width="16" height="16">
                   <path
                     d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
@@ -1072,7 +1073,7 @@
                   </div>
                 </div>
               </div>
-            </ul>
+            </div>
           </div>
           <nav class="footer__menu">
             <ul class="footer__menu-list">

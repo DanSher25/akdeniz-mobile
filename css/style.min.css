@@ -1509,6 +1509,11 @@ a.breadcrumbs__item:hover {
   overflow-x: auto;
   gap: 5px;
   margin-top: 12px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.card__prices-table::-webkit-scrollbar {
+  display: none;
 }
 .card__prices-row {
   background-color: #f3f1f1;
@@ -1710,6 +1715,11 @@ a.breadcrumbs__item:hover {
 }
 .filter__scroll {
   overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.filter__scroll::-webkit-scrollbar {
+  display: none;
 }
 .filter__sticky {
   position: sticky;
