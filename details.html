@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Апартаменты</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper container">
+        <div class="header__top">
+          <div class="header__burger">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+              </g>
+            </svg>
+          </div>
+          <a href="/" class="header__prev-page">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.707 5.293a1 1 0 010 1.414L10.414 12l5.293 5.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+          <div class="header__share bs-trigger" data-bs-target="share">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13 6a4 4 0 118 0 4 4 0 01-8 0zm4 2a2 2 0 110-4 2 2 0 010 4z" fill="currentColor"></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1 12a4 4 0 017.017-2.627l5.07-2.535c.145.675.459 1.287.896 1.788l-5.07 2.536a4.015 4.015 0 01-.001 1.676l5.07 2.536a4 4 0 11-.895 1.789l-5.07-2.536A4 4 0 011 12zm4 2a2 2 0 110-4 2 2 0 010 4zm10 4a2 2 0 104 0 2 2 0 00-4 0z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <div class="bs-content" id="share">
+              <div class="share">
+                <div class="share__wrapper">
+                  <ul class="share__list">
+                    <li class="share__item">
+                      <div class="share__img-wrapper"><img src="images/vk.svg" alt="" class="share__img" /></div>
+                      <span class="share__item-title">ВКонтакте</span>
+                    </li>
+                    <li class="share__item">
+                      <div class="share__img-wrapper"><img src="images/ok.svg" alt="" class="share__img" /></div>
+                      <span class="share__item-title">Одноклассники</span>
+                    </li>
+                    <li class="share__item">
+                      <div class="share__img-wrapper"><img src="images/whatsapp.svg" alt="" class="share__img" /></div>
+                      <span class="share__item-title">WhatsApp</span>
+                    </li>
+                    <li class="share__item">
+                      <div class="share__img-wrapper"><img src="images/tg.svg" alt="" class="share__img" /></div>
+                      <span class="share__item-title">Телеграм</span>
+                    </li>
+                    <li class="share__item">
+                      <div class="share__img-wrapper"><img src="images/share.svg" alt="" class="share__img share__img--copy" /></div>
+                      <span class="share__item-title">Скопировать ссылку</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="share__cancel-btn bs__close">Отменить</div>
+            </div>
+          </div>
+          <a href="/" class="header__favorite header__favorite--left">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="header__mobile-menu">
+          <ul class="header__top-menu">
+            <li class="header__top-menu-item">
+              <a href="/" class="header__top-menu-link">
+                <span class="header__top-menu-title">Новостройки</span>
+                <span class="header__top-menu-value">100</span>
+              </a>
+            </li>
+            <li class="header__top-menu-item">
+              <a href="/" class="header__top-menu-link">
+                <span class="header__top-menu-title">Вторичка</span>
+                <span class="header__top-menu-value">100</span>
+              </a>
+            </li>
+            <li class="header__top-menu-item">
+              <a href="/" class="header__top-menu-link">
+                <span class="header__top-menu-title">Коммерческая</span>
+                <span class="header__top-menu-value">100</span>
+              </a>
+            </li>
+          </ul>
+          <div class="header__mobile-close">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z"
+                  fill="#000000"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Инвестиции</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">ВНЖ и Гражданство</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Рассрочка</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">О компании</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+88004447601" class="header__phone">8 (800) 444-76-01</a>
+          <div class="header__mobile-dropdowns-wrapper">
+            <div class="header__language dropdown-list">
+              <img src="images/flag-ru.svg" alt="" class="header__language-img" />
+              <div class="header__language-dropdown dropdown-list__wrapper">
+                <div class="header__dropdown-list dropdown-list__list">
+                  <a href="/" class="dropdown-list__dropdown-item header__language-item">
+                    <span>US</span>
+                    <img src="images/flag-usa.svg" alt="" class="header__language-img" />
+                  </a>
+                  <a href="/" class="dropdown-list__dropdown-item header__language-item">
+                    <span>FR</span>
+                    <img src="images/flag-fr.svg" alt="" class="header__language-img" />
+                  </a>
+                  <a href="/" class="dropdown-list__dropdown-item header__language-item">
+                    <span>DE</span>
+                    <img src="images/flag-de.svg" alt="" class="header__language-img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__overlay"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="gallery">
+        <div class="gallery__wrapper container">
+          <div class="gallery__list">
+            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full">
+              <img src="images/details11.webp" alt="" class="gallery__img" />
+            </div>
+            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full">
+              <img src="images/details12.webp" alt="" class="gallery__img" />
+              <div class="gallery__tag">внутренний двор</div>
+            </div>
+            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full">
+              <img src="images/details13.webp" alt="" class="gallery__img" />
+              <div class="gallery__tag">паркинг</div>
+            </div>
+            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full">
+              <img src="images/details14.webp" alt="" class="gallery__img" />
+            </div>
+            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full">
+              <div class="gallery__info">
+                <span class="gallery__info-title">Спросите у застройщика</span>
+                <div class="gallery__info-list">
+                  <div class="gallery__info-item">Когда сдаётся дом?</div>
+                  <div class="gallery__info-item">Есть акции и скидки?</div>
+                  <div class="gallery__info-item">Какие квартиры в наличии?</div>
+                  <div class="gallery__info-item">Какие есть варианты отделки?</div>
+                </div>
+                <a href="/" class="gallery__info-btn">Позвонить застройщику</a>
+              </div>
+            </div>
+            <div class="bs-content" id="gallery">
+              <div class="gallery-modal">
+                <div class="gallery-modal__header">
+                  <svg class="bs__close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.707 5.293a1 1 0 010 1.414L10.414 12l5.293 5.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z"
+                      fill="#fff"
+                    ></path>
+                  </svg>
+                  <div class="gallery-modal__favorite">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__outer">
+        <div class="footer__wrapper container">
+          <div class="footer__columns">
+            <div class="footer__column accordion">
+              <div class="footer__column-header accordion__trigger">
+                <div class="footer__column-title">Регионы</div>
+                <svg width="16" height="16">
+                  <path
+                    d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                    fill="#00000052"
+                  ></path>
+                </svg>
+              </div>
+              <div class="accordion__wrapper">
+                <div class="accordion__content footer__accordion-content">
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__link">Аланья</a>
+                  </div>
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__link">Анталия</a>
+                  </div>
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__link">Серик (Белек)</a>
+                  </div>
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__link">Все регионы</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__column accordion">
+              <div class="footer__column-header accordion__trigger">
+                <div class="footer__column-title">Районы</div>
+                <svg width="16" height="16">
+                  <path
+                    d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                    fill="#00000052"
+                  ></path>
+                </svg>
+              </div>
+              <div class="accordion__wrapper">
+                <div class="accordion__content footer__accordion-content">
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__divnk">Район 1</a>
+                  </div>
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__divnk">Район 2</a>
+                  </div>
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__divnk">Район 3</a>
+                  </div>
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__divnk">Все районы</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer__column accordion">
+              <div class="footer__column-header accordion__trigger">
+                <div class="footer__column-title">Тип</div>
+                <svg width="16" height="16">
+                  <path
+                    d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                    fill="#00000052"
+                  ></path>
+                </svg>
+              </div>
+              <div class="accordion__wrapper">
+                <div class="accordion__content footer__accordion-content">
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__divnk">Новостройки</a>
+                  </div>
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__divnk">Вторичка</a>
+                  </div>
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__divnk">Коммерческая</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__column accordion">
+              <div class="footer__column-header accordion__trigger">
+                <div class="footer__column-title">Комнатность</div>
+
+                <svg width="16" height="16">
+                  <path
+                    d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                    fill="#00000052"
+                  ></path>
+                </svg>
+              </div>
+              <div class="accordion__wrapper">
+                <div class="accordion__content footer__accordion-content">
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__divnk">Однокомнатная</a>
+                  </div>
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__divnk">Двухкомнатная</a>
+                  </div>
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__divnk">Трехкомнатная</a>
+                  </div>
+                  <div class="footer__column-item">
+                    <a href="/" class="footer__divnk">Четырехкомнатная</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Инвестиции</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">ВНЖ и Гражданство</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">Рассрочка</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="/" class="footer__menu-link">О компании</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__bottom">
+            <span class="footer__copyright"> © 2025 akdeniz.ru </span>
+            <div class="footer__logo">Akdeniz.ru</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="fixed-contacts">
+      <div class="fixed-contacts__wrapper">
+        <div class="fixed-contacts__btns">
+          <a href="/" class="fixed-contacts__btn">Позвонить</a>
+          <a href="/" class="fixed-contacts__btn">Позвоните мне</a>
+        </div>
+        <span class="fixed-contacts__text">Открыто до 19:00 </span>
+      </div>
+    </div>
+    <div class="bs" id="textSheet">
+      <div class="bs__overlay"></div>
+
+      <div class="bs__panel">
+        <div class="bs__handle"></div>
+        <div class="bs__content"></div>
+      </div>
+    </div>
+    <div class="modal" id="filtersModal">
+      <div class="modal__overlay" data-modal-close></div>
+
+      <div class="modal__panel" role="dialog" aria-modal="true">
+        <div class="modal__content modal__content--dark"></div>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.min.js"></script>
+</html>
