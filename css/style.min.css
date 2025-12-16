@@ -1323,11 +1323,7 @@ a.breadcrumbs__item:hover {
 .modal__content {
   height: 100%;
   overflow: auto;
-  padding: 16px;
   background-color: #f3f1f1;
-}
-.modal__content--dark {
-  background-color: #1b1b1b;
 }
 .modal .filter__rooms-list {
   background-color: #fff;
@@ -1388,6 +1384,9 @@ a.breadcrumbs__item:hover {
 }
 .modal .districts {
   margin-bottom: 12px;
+}
+.modal .filter__all-header-wrapper {
+  padding: 16px;
 }
 
 .catalog__wrapper {
@@ -2162,6 +2161,9 @@ a.breadcrumbs__item:hover {
   font-weight: 500;
 }
 
+.gallery-modal {
+  background-color: #1b1b1b;
+}
 .gallery-modal__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2172,6 +2174,20 @@ a.breadcrumbs__item:hover {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1b1b1b;
+  z-index: 1000;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.gallery-modal__header.is-hidden {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 .gallery-modal__favorite svg {
   -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
@@ -2186,4 +2202,421 @@ a.breadcrumbs__item:hover {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
+}
+.gallery-modal__content {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 48px;
+}
+.gallery-modal__title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  padding-left: 16px;
+}
+.gallery-modal__list {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 2px));
+  grid-template-rows: repeat(auto-fill, 283px 141px);
+  grid-auto-flow: row;
+  gap: 4px;
+}
+.gallery-modal__element {
+  position: relative;
+  height: 283px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.gallery-modal__element:nth-child(3n+1) {
+  grid-column: 1/span 2;
+  width: 100%;
+  height: 283px;
+}
+.gallery-modal__element:nth-child(3n+2) {
+  grid-column: 1;
+  height: 141px;
+}
+.gallery-modal__element:nth-child(3n+3) {
+  grid-column: 2;
+  height: 141px;
+}
+.gallery-modal__element:nth-last-child(1):nth-child(3n+2) {
+  grid-column: 1/span 2;
+  width: 100%;
+  height: 283px;
+}
+.gallery-modal__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  position: fixed;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.gallery-modal__btns.is-hidden {
+  -webkit-transform: translateY(150%);
+  -ms-transform: translateY(150%);
+  transform: translateY(150%);
+}
+.gallery-modal__btn {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-radius: 12px;
+  font-size: 16px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.gallery-modal__btn:first-child {
+  background-color: #fed42b;
+}
+.gallery-modal__btn:last-child {
+  background-color: #f3f1f1;
+}
+
+.installment-plan__wrapper {
+  background-color: #f3f1f1;
+  margin: 12px auto 0 auto;
+  padding: 24px 32px;
+  border-radius: 20px;
+  max-width: 700px;
+}
+.installment-plan__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.installment-plan__top-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 5px;
+}
+.installment-plan__top-item-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.56);
+}
+.installment-plan__top-item-value {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.installment-plan__button {
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-top: 16px;
+  color: #fff;
+  background-color: #2e2e2e;
+  color: rgba(255, 255, 255, 0.92);
+  -webkit-transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
+  transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
+}
+.installment-plan__button:hover {
+  background-color: #272727;
+}
+
+.apartments-header__wrapper {
+  margin-top: 24px;
+}
+.apartments-header__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.apartments-header__price {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+}
+.apartments-header__info-columns {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.apartments-header__info-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.apartments-header__info-row:first-child {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.apartments-header__info-row:last-child {
+  color: rgba(0, 0, 0, 0.5607843137);
+  font-size: 16px;
+  line-height: 24px;
+}
+.apartments-header__installment-plan {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.apartments-header__map-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.apartments-header__map-location {
+  font-size: 16px;
+}
+.apartments-header__map-wrapper {
+  padding: 18px 0;
+}
+.apartments-header__map-icon {
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-size: contain;
+  overflow: hidden;
+}
+.apartments-header__map-btn {
+  width: 100%;
+  border-radius: 12px;
+  font-size: 16px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #f3f1f1;
+  margin-top: 18px;
+  font-weight: 500;
+}
+
+.map-modal {
+  height: 100%;
+}
+.map-modal__wrapper {
+  height: 100%;
+}
+.map-modal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1000;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.map-modal__header.is-hidden {
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.map-modal__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+}
+.map-modal__link span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.map-modal iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.other-prices__wrapper {
+  margin-top: 24px;
+}
+.other-prices__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.other-prices__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  padding: 14px 0;
+}
+.other-prices__item:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.other-prices__body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.other-prices__arrow {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  width: 16px;
+  height: 16px;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+.other-prices__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 8px;
+}
+.other-prices__column:last-child {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.other-prices__top {
+  font-weight: 500;
+  font-size: 16px;
+}
+.other-prices__bottom {
+  font-size: 14px;
+}
+
+.prices-modal {
+  height: 100%;
+}
+.prices-modal__wrapper {
+  height: 100%;
+}
+.prices-modal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 28px;
+  padding: 8px 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1000;
+  border-bottom: 1px solid #e7eaef;
+}
+.prices-modal__rooms {
+  font-weight: 700;
+}
+.prices-modal__amount {
+  padding-top: 5px;
+  font-size: 14px;
+}
+.prices-modal__body {
+  margin-top: 52px;
+  height: 100%;
+  background-color: #fff;
+  padding: 16px;
+}
+.prices-modal__sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+.prices-modal__sort-text {
+  color: rgb(0, 101, 217);
 }

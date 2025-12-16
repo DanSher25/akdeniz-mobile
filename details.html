@@ -162,21 +162,21 @@
       <section class="gallery">
         <div class="gallery__wrapper container">
           <div class="gallery__list">
-            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full">
+            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full" data-bs-open="modal">
               <img src="images/details11.webp" alt="" class="gallery__img" />
             </div>
-            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full">
+            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full" data-bs-open="modal">
               <img src="images/details12.webp" alt="" class="gallery__img" />
               <div class="gallery__tag">внутренний двор</div>
             </div>
-            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full">
+            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full" data-bs-open="modal">
               <img src="images/details13.webp" alt="" class="gallery__img" />
               <div class="gallery__tag">паркинг</div>
             </div>
-            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full">
+            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full" data-bs-open="modal">
               <img src="images/details14.webp" alt="" class="gallery__img" />
             </div>
-            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full">
+            <div class="gallery__element bs-trigger" data-bs-target="gallery" data-bs-mode="full" data-bs-open="modal">
               <div class="gallery__info">
                 <span class="gallery__info-title">Спросите у застройщика</span>
                 <div class="gallery__info-list">
@@ -205,6 +205,236 @@
                         d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
                       ></path>
                     </svg>
+                  </div>
+                </div>
+                <div class="gallery-modal__content">
+                  <div class="gallery-modal__section">
+                    <h3 class="gallery-modal__title">Обзор</h3>
+                    <div class="gallery-modal__list">
+                      <a class="gallery-modal__element" data-fancybox="gallery" href="images/details11.webp">
+                        <img src="images/details11.webp" alt="" />
+                      </a>
+                      <a class="gallery-modal__element" data-fancybox="gallery" href="images/details12.webp">
+                        <img src="images/details12.webp" alt="" />
+                      </a>
+                      <a class="gallery-modal__element" data-fancybox="gallery" href="images/details13.webp">
+                        <img src="images/details13.webp" alt="" />
+                      </a>
+                      <a class="gallery-modal__element" data-fancybox="gallery" href="images/details14.webp">
+                        <img src="images/details14.webp" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="gallery-modal__section">
+                    <h3 class="gallery-modal__title">Внутрений двор</h3>
+                    <div class="gallery-modal__list">
+                      <a class="gallery-modal__element" data-fancybox="gallery2" href="images/details11.webp">
+                        <img src="images/details11.webp" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-modal__footer">
+                  <div class="gallery-modal__btns">
+                    <a href="/" class="gallery-modal__btn">Позвонить</a>
+                    <a href="/" class="gallery-modal__btn">Позвоните мне</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="apartments-header">
+        <div class="apartments-header__wrapper container">
+          <h1 class="apartments-header__title">EMERALD ELEGANCE</h1>
+          <span class="apartments-header__price">от 62 000 €</span>
+          <div class="apartments-header__info-columns">
+            <div class="apartments-header__info-column">
+              <div class="apartments-header__info-row">класс жилья</div>
+              <div class="apartments-header__info-row">бизнес</div>
+            </div>
+            <div class="apartments-header__info-column">
+              <div class="apartments-header__info-row">квартиры</div>
+              <div class="apartments-header__info-row">от 880 € / кв.м</div>
+            </div>
+            <div class="apartments-header__info-column">
+              <div class="apartments-header__info-row">срок сдачи</div>
+              <div class="apartments-header__info-row">06.2025</div>
+            </div>
+          </div>
+          <div class="apartments-header__installment-plan installment-plan">
+            <div class="installment-plan__wrapper">
+              <div class="installment-plan__top">
+                <div class="installment-plan__top-item">
+                  <div class="installment-plan__top-item-value">24 месяца</div>
+                  <div class="installment-plan__top-item-title">Рассрочка</div>
+                </div>
+                <div class="installment-plan__top-item">
+                  <div class="installment-plan__top-item-value">от 1 290 €</div>
+                  <div class="installment-plan__top-item-title">Платеж в месяц</div>
+                </div>
+              </div>
+              <a href="/" class="installment-plan__button">Отправить заявку</a>
+            </div>
+          </div>
+          <div class="apartments-header__map-wrapper">
+            <div class="apartments-header__map-header">
+              <div class="apartments-header__map-location">Анталия</div>
+              <div class="apartments-header__map-icon" style="background-image: url('images/map-bg.png')">
+                <svg width="19.2" height="24">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 9.6A9.6 9.6 0 019.6 0a9.6 9.6 0 019.6 9.6 9.57 9.57 0 01-2.81 6.787c-.454.453-1.067.96-1.731 1.508-1.88 1.551-4.162 3.434-4.339 5.385-.036.396-.323.72-.72.72-.397 0-.684-.324-.72-.72-.177-1.951-2.459-3.834-4.339-5.385-.664-.548-1.277-1.055-1.73-1.508A9.569 9.569 0 010 9.6zm12.96-.018a3.36 3.36 0 11-6.721 0 3.36 3.36 0 016.72 0z"
+                    fill="#F33"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="apartments-header__map-btn bs-trigger" data-bs-target="map" data-bs-mode="full" data-bs-open="modal">Смотреть на карте</div>
+            <div class="bs-content" id="map">
+              <div class="map-modal">
+                <div class="map-modal__wrapper">
+                  <div class="map-modal__header">
+                    <svg class="bs__close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15.707 5.293a1 1 0 010 1.414L10.414 12l5.293 5.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z"
+                        fill="#000"
+                      ></path>
+                    </svg>
+                    <a href="/" class="map-modal__link">
+                      <span>На Яндекс карты</span>
+                      <svg width="19.2" height="24">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M0 9.6A9.6 9.6 0 019.6 0a9.6 9.6 0 019.6 9.6 9.57 9.57 0 01-2.81 6.787c-.454.453-1.067.96-1.731 1.508-1.88 1.551-4.162 3.434-4.339 5.385-.036.396-.323.72-.72.72-.397 0-.684-.324-.72-.72-.177-1.951-2.459-3.834-4.339-5.385-.664-.548-1.277-1.055-1.73-1.508A9.569 9.569 0 010 9.6zm12.96-.018a3.36 3.36 0 11-6.721 0 3.36 3.36 0 016.72 0z"
+                          fill="#F33"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <iframe src="https://yandex.ru/map-widget/v1/?ll=30.696747%2C36.885751&z=8" width="560" height="400" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="other-prices">
+        <div class="other-prices__wrapper container">
+          <div class="other-prices__list">
+            <div class="other-prices__item bs-trigger" data-bs-target="other-prices-1" data-bs-mode="full" data-bs-open="modal">
+              <div class="other-prices__body">
+                <div class="other-prices__column">
+                  <div class="other-prices__top">2+1</div>
+                  <div class="other-prices__bottom">72 квартиры</div>
+                </div>
+                <div class="other-prices__column">
+                  <div class="other-prices__top">от 62 000 €</div>
+                  <div class="other-prices__bottom">от 53 кв.м</div>
+                </div>
+              </div>
+              <div class="other-prices__arrow">
+                <svg width="16" height="16">
+                  <path
+                    d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                    fill="#00000052"
+                  ></path>
+                </svg>
+              </div>
+              <div class="bs-content" id="other-prices-1">
+                <div class="prices-modal">
+                  <div class="prices-modal__wrapper">
+                    <div class="prices-modal__header">
+                      <svg class="bs__close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M15.707 5.293a1 1 0 010 1.414L10.414 12l5.293 5.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z"
+                          fill="#000"
+                        ></path>
+                      </svg>
+                      <div class="prices-modal__header-titles">
+                        <div class="prices-modal__rooms">2+1</div>
+                        <div class="prices-modal__amount">72 предложения</div>
+                      </div>
+                    </div>
+                    <div class="prices-modal__body">
+                      <div class="prices-modal__sort">
+                        <div class="prices-modal__sort-title">Сортировать:</div>
+                        <div class="prices-modal__sort dropdown-list">
+                          <span class="prices-modal__sort-text dropdown-list__text">По актуальности</span>
+
+                          <div class="prices-modal__sort-dropdown dropdown-list__wrapper">
+                            <div class="prices-modal__sort-list dropdown-list__list">
+                              <a href="/" class="dropdown-list__dropdown-item">По актуальности</a>
+                              <a href="/" class="dropdown-list__dropdown-item">Цена по возрастанию</a>
+                              <a href="/" class="dropdown-list__dropdown-item">По сроку сдачи</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="other-prices__item bs-trigger" data-bs-target="other-prices-2" data-bs-mode="full" data-bs-open="modal">
+              <div class="other-prices__body">
+                <div class="other-prices__column">
+                  <div class="other-prices__top">2+1</div>
+                  <div class="other-prices__bottom">10 квартир</div>
+                </div>
+                <div class="other-prices__column">
+                  <div class="other-prices__top">от 62 000 €</div>
+                  <div class="other-prices__bottom">от 85.19 кв.м</div>
+                </div>
+              </div>
+              <div class="other-prices__arrow">
+                <svg width="16" height="16">
+                  <path
+                    d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                    fill="#00000052"
+                  ></path>
+                </svg>
+              </div>
+              <div class="bs-content" id="other-prices-2">
+                <div class="prices-modal">
+                  <div class="prices-modal__wrapper">
+                    <div class="prices-modal__header">
+                      <svg class="bs__close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M15.707 5.293a1 1 0 010 1.414L10.414 12l5.293 5.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z"
+                          fill="#000"
+                        ></path>
+                      </svg>
+                      <div class="prices-modal__header-titles">
+                        <div class="prices-modal__rooms">2+1</div>
+                        <div class="prices-modal__amount">72 предложения</div>
+                      </div>
+                    </div>
+                    <div class="prices-modal__body">
+                      <div class="prices-modal__sort">
+                        <div class="prices-modal__sort-title">Сортировать:</div>
+                        <div class="prices-modal__sort dropdown-list">
+                          <span class="prices-modal__sort-text dropdown-list__text">По актуальности</span>
+
+                          <div class="prices-modal__sort-dropdown dropdown-list__wrapper">
+                            <div class="prices-modal__sort-list dropdown-list__list">
+                              <a href="/" class="dropdown-list__dropdown-item">По актуальности</a>
+                              <a href="/" class="dropdown-list__dropdown-item">Цена по возрастанию</a>
+                              <a href="/" class="dropdown-list__dropdown-item">По сроку сдачи</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -369,7 +599,7 @@
       <div class="modal__overlay" data-modal-close></div>
 
       <div class="modal__panel" role="dialog" aria-modal="true">
-        <div class="modal__content modal__content--dark"></div>
+        <div class="modal__content"></div>
       </div>
     </div>
   </body>
