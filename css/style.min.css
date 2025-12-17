@@ -627,7 +627,7 @@ a.breadcrumbs__item:hover {
 .bs {
   position: fixed;
   inset: 0;
-  z-index: 1000;
+  z-index: 1300;
   pointer-events: none;
 }
 .bs.is-open {
@@ -1632,6 +1632,9 @@ a.breadcrumbs__item:hover {
   font-weight: 400;
   line-height: 24px;
 }
+.footer__wrapper--details {
+  padding-bottom: 100px;
+}
 .footer__columns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2013,6 +2016,7 @@ a.breadcrumbs__item:hover {
   margin: 0 auto;
   max-width: 640px;
   padding: 12px 16px;
+  z-index: 10;
 }
 .fixed-contacts__btns {
   display: -webkit-box;
@@ -2507,10 +2511,10 @@ a.breadcrumbs__item:hover {
   height: 100%;
 }
 
-.other-prices__wrapper {
+.plans__wrapper {
   margin-top: 24px;
 }
-.other-prices__list {
+.plans__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2519,17 +2523,17 @@ a.breadcrumbs__item:hover {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-.other-prices__item {
+.plans__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
   padding: 14px 0;
 }
-.other-prices__item:not(:last-child) {
+.plans__item:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
-.other-prices__body {
+.plans__body {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2540,7 +2544,7 @@ a.breadcrumbs__item:hover {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.other-prices__arrow {
+.plans__arrow {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
@@ -2549,7 +2553,7 @@ a.breadcrumbs__item:hover {
   -ms-flex-item-align: center;
   align-self: center;
 }
-.other-prices__column {
+.plans__column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2562,26 +2566,26 @@ a.breadcrumbs__item:hover {
   justify-content: space-between;
   gap: 8px;
 }
-.other-prices__column:last-child {
+.plans__column:last-child {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
 }
-.other-prices__top {
+.plans__top {
   font-weight: 500;
   font-size: 16px;
 }
-.other-prices__bottom {
+.plans__bottom {
   font-size: 14px;
 }
 
-.prices-modal {
+.plans-modal {
   height: 100%;
 }
-.prices-modal__wrapper {
+.plans-modal__wrapper {
   height: 100%;
 }
-.prices-modal__header {
+.plans-modal__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2598,25 +2602,207 @@ a.breadcrumbs__item:hover {
   z-index: 1000;
   border-bottom: 1px solid #e7eaef;
 }
-.prices-modal__rooms {
+.plans-modal__rooms {
   font-weight: 700;
 }
-.prices-modal__amount {
+.plans-modal__amount {
   padding-top: 5px;
   font-size: 14px;
 }
-.prices-modal__body {
+.plans-modal__body {
   margin-top: 52px;
   height: 100%;
   background-color: #fff;
   padding: 16px;
 }
-.prices-modal__sort {
+.plans-modal__sort {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 5px;
 }
-.prices-modal__sort-text {
+.plans-modal__sort-text {
   color: rgb(0, 101, 217);
+}
+.plans-modal__list {
+  margin-top: 24px;
+  padding-bottom: 100px;
+}
+.plans-modal__card {
+  padding: 24px 0;
+}
+.plans-modal__card:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.plans-modal__footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 12px 16px;
+  z-index: 10;
+}
+.plans-modal__btns {
+  margin-bottom: 12px;
+}
+.plans-modal__btn {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-radius: 12px;
+  font-size: 16px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 500;
+  background-color: #fed42b;
+}
+.plans-modal__text {
+  color: rgba(0, 0, 0, 0.56);
+  font-size: 12px;
+  line-height: 16px;
+  min-height: 16px;
+  text-align: center;
+  display: block;
+}
+.plans-modal__filters {
+  height: 24px;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin-left: auto;
+}
+
+.plans-card__wrapper {
+  display: grid;
+  grid-template-columns: 75px 1fr 24px;
+  grid-template-rows: auto auto auto;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px;
+}
+.plans-card__img {
+  grid-area: 1/1/4/2;
+}
+.plans-card__price {
+  grid-area: 1/2/2/3;
+  font-weight: 700;
+}
+.plans-card__area {
+  grid-area: 2/2/3/3;
+  align-self: center;
+}
+.plans-card__date {
+  grid-area: 3/2/4/3;
+  align-self: flex-end;
+  padding-bottom: 5px;
+}
+.plans-card__favorite {
+  grid-area: 1/3/4/4;
+}
+.plans-card__favorite svg {
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+.plans-card__favorite.active svg {
+  color: #e53935;
+  fill: red;
+  stroke: red;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.parameters__wrapper {
+  margin-top: 42px;
+}
+.parameters__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.parameters__subtitle {
+  color: rgba(0, 0, 0, 0.32);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 4px;
+  display: block;
+}
+.parameters__list {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 800px;
+  width: 100%;
+  gap: 10%;
+  row-gap: 26px;
+}
+.parameters__item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 48px auto;
+  grid-template-rows: auto auto;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  row-gap: 4px;
+}
+.parameters__item-icon {
+  grid-area: 1/1/3/2;
+}
+.parameters__item-title {
+  grid-area: 1/2/2/3;
+  color: rgba(0, 0, 0, 0.56);
+  font-size: 16px;
+  line-height: 20px;
+}
+.parameters__item-value {
+  grid-area: 2/2/3/3;
+  color: rgba(0, 0, 0, 0.92);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.map__wrapper {
+  margin-top: 24px;
+}
+.map iframe {
+  width: 100%;
+  border-radius: 12px;
+}
+.map__title {
+  padding: 32px 0 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.map__address {
+  margin-bottom: 16px;
+}
+
+.simialar-mobile__wrapper {
+  margin-top: 24px;
+  overflow: hidden;
+}
+.simialar-mobile__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  padding-left: 16px;
 }

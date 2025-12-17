@@ -72,7 +72,7 @@
               <div class="share__cancel-btn bs__close">Отменить</div>
             </div>
           </div>
-          <a href="/" class="header__favorite header__favorite--left">
+          <a href="/" class="header__favorite header__favorite--left favorite">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path
                 d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
@@ -199,7 +199,7 @@
                       fill="#fff"
                     ></path>
                   </svg>
-                  <div class="gallery-modal__favorite">
+                  <div class="gallery-modal__favorite favorite">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <path
                         d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
@@ -324,21 +324,21 @@
           </div>
         </div>
       </section>
-      <section class="other-prices">
-        <div class="other-prices__wrapper container">
-          <div class="other-prices__list">
-            <div class="other-prices__item bs-trigger" data-bs-target="other-prices-1" data-bs-mode="full" data-bs-open="modal">
-              <div class="other-prices__body">
-                <div class="other-prices__column">
-                  <div class="other-prices__top">2+1</div>
-                  <div class="other-prices__bottom">72 квартиры</div>
+      <section class="plans">
+        <div class="plans__wrapper container">
+          <div class="plans__list">
+            <div class="plans__item bs-trigger" data-bs-target="plans-1" data-bs-mode="full" data-bs-open="modal">
+              <div class="plans__body">
+                <div class="plans__column">
+                  <div class="plans__top">2+1</div>
+                  <div class="plans__bottom">72 квартиры</div>
                 </div>
-                <div class="other-prices__column">
-                  <div class="other-prices__top">от 62 000 €</div>
-                  <div class="other-prices__bottom">от 53 кв.м</div>
+                <div class="plans__column">
+                  <div class="plans__top">от 62 000 €</div>
+                  <div class="plans__bottom">от 53 кв.м</div>
                 </div>
               </div>
-              <div class="other-prices__arrow">
+              <div class="plans__arrow">
                 <svg width="16" height="16">
                   <path
                     d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
@@ -346,10 +346,10 @@
                   ></path>
                 </svg>
               </div>
-              <div class="bs-content" id="other-prices-1">
-                <div class="prices-modal">
-                  <div class="prices-modal__wrapper">
-                    <div class="prices-modal__header">
+              <div class="bs-content" id="plans-1">
+                <div class="plans-modal">
+                  <div class="plans-modal__wrapper">
+                    <div class="plans-modal__header">
                       <svg class="bs__close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
                         <path
                           fill-rule="evenodd"
@@ -358,19 +358,27 @@
                           fill="#000"
                         ></path>
                       </svg>
-                      <div class="prices-modal__header-titles">
-                        <div class="prices-modal__rooms">2+1</div>
-                        <div class="prices-modal__amount">72 предложения</div>
+                      <div class="plans-modal__header-titles">
+                        <div class="plans-modal__rooms">2+1</div>
+                        <div class="plans-modal__amount">72 предложения</div>
+                      </div>
+                      <div class="plans-modal__filters bs-trigger" data-bs-target="filters" data-bs-mode="full" data-no-swipe-close>
+                        <svg width="24" height="24">
+                          <path
+                            d="M11.08 2.93v1.961c-1.462.413-2.533 1.73-2.533 3.278s1.097 2.864 2.534 3.303v8.573c0 .516.417.955.966.955a.958.958 0 00.966-.955v-8.573c1.463-.413 2.534-1.73 2.534-3.278s-1.071-2.864-2.534-3.277V2.956A.958.958 0 0012.047 2a.921.921 0 00-.966.93zm2.534 5.239c0 .825-.68 1.548-1.567 1.548-.888 0-1.567-.671-1.567-1.548 0-.878.679-1.549 1.567-1.549.888 0 1.567.723 1.567 1.549zM5.466 20.046V18.01C6.93 17.597 8 16.283 8 14.736s-1.07-2.862-2.534-3.274V2.95a.958.958 0 00-.966-.954.942.942 0 00-.966.954v8.512C2.07 11.874 1 13.189 1 14.736s1.07 2.861 2.534 3.274v2.036c0 .516.417.954.966.954a.942.942 0 00.966-.954zm-2.533-5.31c0-.825.679-1.547 1.567-1.547.888 0 1.567.67 1.567 1.547 0 .876-.731 1.547-1.567 1.547s-1.567-.722-1.567-1.547zM18.627 2.95v8.512c-1.462.412-2.533 1.727-2.533 3.274s1.07 2.861 2.533 3.274v2.036c0 .516.418.954.967.954a.942.942 0 00.966-.954V18.01c1.463-.413 2.534-1.727 2.534-3.274s-1.071-2.862-2.534-3.274V2.95a.958.958 0 00-.966-.954.942.942 0 00-.967.954zm2.534 11.786c0 .825-.68 1.547-1.567 1.547-.888 0-1.567-.67-1.567-1.547 0-.877.679-1.547 1.567-1.547.888 0 1.567.722 1.567 1.547z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
                       </div>
                     </div>
-                    <div class="prices-modal__body">
-                      <div class="prices-modal__sort">
-                        <div class="prices-modal__sort-title">Сортировать:</div>
-                        <div class="prices-modal__sort dropdown-list">
-                          <span class="prices-modal__sort-text dropdown-list__text">По актуальности</span>
+                    <div class="plans-modal__body">
+                      <div class="plans-modal__sort">
+                        <div class="plans-modal__sort-title">Сортировать:</div>
+                        <div class="plans-modal__sort dropdown-list">
+                          <span class="plans-modal__sort-text dropdown-list__text">По актуальности</span>
 
-                          <div class="prices-modal__sort-dropdown dropdown-list__wrapper">
-                            <div class="prices-modal__sort-list dropdown-list__list">
+                          <div class="plans-modal__sort-dropdown dropdown-list__wrapper">
+                            <div class="plans-modal__sort-list dropdown-list__list">
                               <a href="/" class="dropdown-list__dropdown-item">По актуальности</a>
                               <a href="/" class="dropdown-list__dropdown-item">Цена по возрастанию</a>
                               <a href="/" class="dropdown-list__dropdown-item">По сроку сдачи</a>
@@ -378,23 +386,79 @@
                           </div>
                         </div>
                       </div>
+                      <div class="plans-modal__list">
+                        <div class="plans-modal__card plans-card">
+                          <a href="/" class="plans-card__wrapper">
+                            <img src="images/block11.webp" alt="" class="plans-card__img" />
+                            <div class="plans-card__price">62 000 €</div>
+                            <div class="plans-card__area">от 1 170 € / кв.м</div>
+                            <div class="plans-card__date">4 квартал 2026</div>
+                            <div class="plans-card__favorite favorite">
+                              <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#000"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="plans-modal__card plans-card">
+                          <a href="/" class="plans-card__wrapper">
+                            <img src="images/block12.webp" alt="" class="plans-card__img" />
+                            <div class="plans-card__price">62 000 €</div>
+                            <div class="plans-card__area">от 1 170 € / кв.м</div>
+                            <div class="plans-card__date">4 квартал 2026</div>
+                            <div class="plans-card__favorite favorite">
+                              <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#000"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                                ></path>
+                              </svg>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="plans-modal__footer">
+                      <div class="plans-modal__btns">
+                        <a href="/" class="plans-modal__btn">Позвонить</a>
+                      </div>
+                      <span class="plans-modal__text">Открыто до 19:00 </span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="other-prices__item bs-trigger" data-bs-target="other-prices-2" data-bs-mode="full" data-bs-open="modal">
-              <div class="other-prices__body">
-                <div class="other-prices__column">
-                  <div class="other-prices__top">2+1</div>
-                  <div class="other-prices__bottom">10 квартир</div>
+            <div class="plans__item bs-trigger" data-bs-target="plans-2" data-bs-mode="full" data-bs-open="modal">
+              <div class="plans__body">
+                <div class="plans__column">
+                  <div class="plans__top">2+1</div>
+                  <div class="plans__bottom">10 квартир</div>
                 </div>
-                <div class="other-prices__column">
-                  <div class="other-prices__top">от 62 000 €</div>
-                  <div class="other-prices__bottom">от 85.19 кв.м</div>
+                <div class="plans__column">
+                  <div class="plans__top">от 62 000 €</div>
+                  <div class="plans__bottom">от 85.19 кв.м</div>
                 </div>
               </div>
-              <div class="other-prices__arrow">
+              <div class="plans__arrow">
                 <svg width="16" height="16">
                   <path
                     d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
@@ -402,50 +466,641 @@
                   ></path>
                 </svg>
               </div>
-              <div class="bs-content" id="other-prices-2">
-                <div class="prices-modal">
-                  <div class="prices-modal__wrapper">
-                    <div class="prices-modal__header">
-                      <svg class="bs__close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
+              <div class="bs-content" id="plans-2">
+                <div class="plans-modal__wrapper">
+                  <div class="plans-modal__header">
+                    <svg class="bs__close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15.707 5.293a1 1 0 010 1.414L10.414 12l5.293 5.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z"
+                        fill="#000"
+                      ></path>
+                    </svg>
+                    <div class="plans-modal__header-titles">
+                      <div class="plans-modal__rooms">2+1</div>
+                      <div class="plans-modal__amount">72 предложения</div>
+                    </div>
+                    <div class="plans-modal__filters bs-trigger" data-bs-target="filters" data-bs-mode="full" data-no-swipe-close>
+                      <svg width="24" height="24">
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M15.707 5.293a1 1 0 010 1.414L10.414 12l5.293 5.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z"
-                          fill="#000"
+                          d="M11.08 2.93v1.961c-1.462.413-2.533 1.73-2.533 3.278s1.097 2.864 2.534 3.303v8.573c0 .516.417.955.966.955a.958.958 0 00.966-.955v-8.573c1.463-.413 2.534-1.73 2.534-3.278s-1.071-2.864-2.534-3.277V2.956A.958.958 0 0012.047 2a.921.921 0 00-.966.93zm2.534 5.239c0 .825-.68 1.548-1.567 1.548-.888 0-1.567-.671-1.567-1.548 0-.878.679-1.549 1.567-1.549.888 0 1.567.723 1.567 1.549zM5.466 20.046V18.01C6.93 17.597 8 16.283 8 14.736s-1.07-2.862-2.534-3.274V2.95a.958.958 0 00-.966-.954.942.942 0 00-.966.954v8.512C2.07 11.874 1 13.189 1 14.736s1.07 2.861 2.534 3.274v2.036c0 .516.417.954.966.954a.942.942 0 00.966-.954zm-2.533-5.31c0-.825.679-1.547 1.567-1.547.888 0 1.567.67 1.567 1.547 0 .876-.731 1.547-1.567 1.547s-1.567-.722-1.567-1.547zM18.627 2.95v8.512c-1.462.412-2.533 1.727-2.533 3.274s1.07 2.861 2.533 3.274v2.036c0 .516.418.954.967.954a.942.942 0 00.966-.954V18.01c1.463-.413 2.534-1.727 2.534-3.274s-1.071-2.862-2.534-3.274V2.95a.958.958 0 00-.966-.954.942.942 0 00-.967.954zm2.534 11.786c0 .825-.68 1.547-1.567 1.547-.888 0-1.567-.67-1.567-1.547 0-.877.679-1.547 1.567-1.547.888 0 1.567.722 1.567 1.547z"
+                          fill="currentColor"
                         ></path>
                       </svg>
-                      <div class="prices-modal__header-titles">
-                        <div class="prices-modal__rooms">2+1</div>
-                        <div class="prices-modal__amount">72 предложения</div>
-                      </div>
                     </div>
-                    <div class="prices-modal__body">
-                      <div class="prices-modal__sort">
-                        <div class="prices-modal__sort-title">Сортировать:</div>
-                        <div class="prices-modal__sort dropdown-list">
-                          <span class="prices-modal__sort-text dropdown-list__text">По актуальности</span>
+                  </div>
+                  <div class="plans-modal__body">
+                    <div class="plans-modal__sort">
+                      <div class="plans-modal__sort-title">Сортировать:</div>
+                      <div class="plans-modal__sort dropdown-list">
+                        <span class="plans-modal__sort-text dropdown-list__text">По актуальности</span>
 
-                          <div class="prices-modal__sort-dropdown dropdown-list__wrapper">
-                            <div class="prices-modal__sort-list dropdown-list__list">
-                              <a href="/" class="dropdown-list__dropdown-item">По актуальности</a>
-                              <a href="/" class="dropdown-list__dropdown-item">Цена по возрастанию</a>
-                              <a href="/" class="dropdown-list__dropdown-item">По сроку сдачи</a>
-                            </div>
+                        <div class="plans-modal__sort-dropdown dropdown-list__wrapper">
+                          <div class="plans-modal__sort-list dropdown-list__list">
+                            <a href="/" class="dropdown-list__dropdown-item">По актуальности</a>
+                            <a href="/" class="dropdown-list__dropdown-item">Цена по возрастанию</a>
+                            <a href="/" class="dropdown-list__dropdown-item">По сроку сдачи</a>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <div class="plans-modal__list">
+                      <div class="plans-modal__card plans-card">
+                        <a href="/" class="plans-card__wrapper">
+                          <img src="images/block11.webp" alt="" class="plans-card__img" />
+                          <div class="plans-card__price">62 000 €</div>
+                          <div class="plans-card__area">от 1 170 € / кв.м</div>
+                          <div class="plans-card__date">4 квартал 2026</div>
+                          <div class="plans-card__favorite favorite">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="#000"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="plans-modal__card plans-card">
+                        <a href="/" class="plans-card__wrapper">
+                          <img src="images/block12.webp" alt="" class="plans-card__img" />
+                          <div class="plans-card__price">62 000 €</div>
+                          <div class="plans-card__area">от 1 170 € / кв.м</div>
+                          <div class="plans-card__date">4 квартал 2026</div>
+                          <div class="plans-card__favorite favorite">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="#000"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plans-modal__footer">
+                    <div class="plans-modal__btns">
+                      <a href="/" class="plans-modal__btn">Позвонить</a>
+                    </div>
+                    <span class="plans-modal__text">Открыто до 19:00 </span>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="bs-content" id="filters">
+            <div class="filter">
+              <div class="filter__all-header-wrapper">
+                <div class="filter__all-header">
+                  <svg class="bs__close" width="24" height="24">
+                    <path
+                      d="M5.707 4.293a1 1 0 00-1.414 1.414l6.364 6.364-6.364 6.364a1 1 0 101.414 1.414l6.364-6.364 6.364 6.364a1 1 0 101.414-1.414l-6.364-6.364 6.364-6.364a1 1 0 10-1.414-1.414l-6.364 6.364-6.364-6.364z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                  <button class="filter__all-reset">Сбросить</button>
+                </div>
+
+                <div class="bs-content__section">
+                  <div class="filter__property-type property-type">
+                    <label class="property-type__item">
+                      <input class="property-type__input" type="radio" name="property_type" value="new" />
+                      <span class="property-type__pill">Новостройки</span>
+                    </label>
+
+                    <label class="property-type__item">
+                      <input class="property-type__input" type="radio" name="property_type" value="secondary" />
+                      <span class="property-type__pill">Вторичка</span>
+                    </label>
+
+                    <label class="property-type__item">
+                      <input class="property-type__input" type="radio" name="property_type" value="commercial" />
+                      <span class="property-type__pill">Коммерческая</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="bs-content__section">
+                  <div class="filter__rooms-list">
+                    <label class="filter__room">
+                      <input class="filter__room-input" type="checkbox" name="rooms[]" value="studio" />
+                      <span class="filter__room-pill">Студия</span>
+                    </label>
+                    <label class="filter__room">
+                      <input class="filter__room-input" type="checkbox" name="rooms[]" value="1" />
+                      <span class="filter__room-pill">1</span>
+                    </label>
+                    <label class="filter__room">
+                      <input class="filter__room-input" type="checkbox" name="rooms[]" value="2" />
+                      <span class="filter__room-pill">2</span>
+                    </label>
+                    <label class="filter__room">
+                      <input class="filter__room-input" type="checkbox" name="rooms[]" value="3" />
+                      <span class="filter__room-pill">3</span>
+                    </label>
+                    <label class="filter__room">
+                      <input class="filter__room-input" type="checkbox" name="rooms[]" value="4plus" />
+                      <span class="filter__room-pill">4+</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="filter__all-price">
+                  <div class="filter__all-title">Цена, ₽</div>
+                  <div class="filter__switch filter-switch" data-switch>
+                    <button class="filter-switch__item is-active" data-value="total">За всё</button>
+                    <button class="filter-switch__item" data-value="m2">За м²</button>
+                    <div class="filter-switch__color"></div>
+                  </div>
+                  <input type="hidden" name="price_type" value="total" id="priceTypeAll" />
+                  <div class="filter__prices">
+                    <div class="filter__price-field">
+                      <span class="filter__price-label">от</span>
+                      <input type="text" name="price_from" inputmode="numeric" class="filter__price-input" />
+                    </div>
+                    <div class="filter__price-field">
+                      <span class="filter__price-label">до</span>
+                      <input type="text" name="price_top" inputmode="numeric" class="filter__price-input" />
+                    </div>
+                  </div>
+                </div>
+                <div class="districts">
+                  <div class="filter__all-title">Районы</div>
+                  <div class="districts__list">
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Дзержинский район" />
+                      <span class="districts__name">Дзержинский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Заволжский район" />
+                      <span class="districts__name">Заволжский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Кировский район" />
+                      <span class="districts__name">Кировский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Красноперекопский район" />
+                      <span class="districts__name">Красноперекопский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Ленинский район" />
+                      <span class="districts__name">Ленинский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="checkbox" name="district[]" value="Фрунзенский район" />
+                      <span class="districts__name">Фрунзенский район</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="districts">
+                  <div class="filter__all-title">Регион</div>
+                  <div class="districts__list">
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Все регионы" />
+                      <span class="districts__name">Все регионы</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Аланья" />
+                      <span class="districts__name">Аланья</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Анталия" />
+                      <span class="districts__name">Анталия</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Серик (Белек)" />
+                      <span class="districts__name">Серик (Белек)</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Кемер" />
+                      <span class="districts__name">Кемер</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Финике" />
+                      <span class="districts__name">Финике</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Газипаша" />
+                      <span class="districts__name">Газипаша</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Мерсин" />
+                      <span class="districts__name">Мерсин</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Стамбул" />
+                      <span class="districts__name">Стамбул</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Манавгат (Сиде)" />
+                      <span class="districts__name">Манавгат (Сиде)</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Бодрум" />
+                      <span class="districts__name">Бодрум</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+
+                    <label class="districts__item">
+                      <input type="radio" name="region" value="Фетхие" />
+                      <span class="districts__name">Фетхие</span>
+                      <span class="districts__check">✓</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="filter__show-btn bs__close">Показать 5 338 предложений</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="parameters">
+        <div class="parameters__wrapper container">
+          <h3 class="parameters__title">Параметры ЖК</h3>
+          <div class="parameters__list">
+            <div class="parameters__item">
+              <svg class="parameters__item-icon" width="48" height="48" viewBox="0 0 48 48">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M29 4H19v3.446L21.132 11h5.736L29 7.446V4zm2 4l-3 5h-3v4.353c0 1.147-.914 1.885-1.754 2.09-1.32.321-2.246 1.449-2.246 2.733C21 23.695 22.3 25 24 25s3-1.306 3-2.823a1 1 0 112 0c0 1.582-.78 2.963-1.971 3.837a91.145 91.145 0 014.475 1.82c4.01 1.757 8.979 4.296 12.62 7.383A3.001 3.001 0 0146 38v5a3 3 0 01-3 3H5a3 3 0 01-3-3v-5a3 3 0 011.877-2.783c3.634-3.081 8.472-5.62 12.358-7.378a89.204 89.204 0 014.602-1.927C19.72 25.034 19 23.698 19 22.177c0-2.285 1.634-4.157 3.773-4.677a.417.417 0 00.2-.11.134.134 0 00.027-.037V13h-3l-3-5V2h14v6zm-7.307 18.991h-.003l-.382.135c-.334.119-.82.296-1.428.527a86.913 86.913 0 00-4.82 2.008C14.02 31.036 10.477 32.86 7.435 35h33.113c-3.074-2.138-6.71-3.96-9.848-5.334a89.09 89.09 0 00-4.991-2.009 72.538 72.538 0 00-1.878-.66 5.339 5.339 0 01-.14-.006zM4 38v5a1 1 0 001 1h38a1 1 0 001-1v-5a1 1 0 00-1-1H5a1 1 0 00-1 1zm8 2.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm7.5 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM30 40.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm7.5 1.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <div class="parameters__item-title">Срок сдачи</div>
+              <div class="parameters__item-value">06.2025</div>
+            </div>
+            <div class="parameters__item">
+              <svg class="parameters__item-icon" width="48" height="48" viewBox="0 0 48 48">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M21.31 3.691c1.1-2.23 4.28-2.23 5.38 0l3.032 6.142a1 1 0 00.753.547l6.778.985c2.46.358 3.443 3.382 1.662 5.117l-4.904 4.781a1 1 0 00-.288.885l1.158 6.751c.39 2.277-1.803 4.052-3.88 3.364V44h4a1 1 0 010 2H13a1 1 0 110-2h4V32.263c-2.079.688-4.272-1.087-3.882-3.364l1.158-6.75a1 1 0 00-.287-.886l-4.905-4.78c-1.78-1.736-.798-4.76 1.663-5.118l6.778-.985a1 1 0 00.753-.547l3.03-6.142zM17.096 30H17v.05l-.458.241a1 1 0 01-1.451-1.054l1.158-6.75a3 3 0 00-.863-2.656l-4.905-4.78a1 1 0 01.554-1.707l6.778-.984a3 3 0 002.26-1.641l3.03-6.143a1 1 0 011.794 0l3.031 6.143a3 3 0 002.259 1.64l6.778.986a1 1 0 01.554 1.705l-4.904 4.781a3 3 0 00-.863 2.655l1.158 6.751a1 1 0 01-1.451 1.054l-.459-.24V30h-.096l-5.508-2.896a3 3 0 00-2.792 0L17.096 30zM19 31.258V44h4V29.155l-4 2.103zM25 44h4V31.258l-4-2.103V44z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <div class="parameters__item-title">Класс жилья</div>
+              <div class="parameters__item-value">бизнес</div>
+            </div>
+            <div class="parameters__item">
+              <svg class="parameters__item-icon" width="48" height="48" viewBox="0 0 48 48">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M23.665 25.085l-8.462 8.463c-1.56 1.56-4.22.901-4.872-1.207L2.135 5.805c-.695-2.25 1.414-4.36 3.664-3.664l26.536 8.196c2.108.651 2.767 3.31 1.207 4.871l-8.463 8.463 4.16 4.16.708-.706a3 3 0 014.243 0l10.928 10.929a3 3 0 010 4.242l-2.828 2.828a3 3 0 01-4.243 0L27.118 34.197a3 3 0 010-4.243l.708-.707-4.161-4.16zM5.209 4.052l26.535 8.196a.93.93 0 01.384 1.546l-8.463 8.463-3.96-3.96a1 1 0 10-1.415 1.413l3.96 3.961-8.462 8.463a.93.93 0 01-1.546-.384L4.046 5.215a.93.93 0 011.163-1.163zm38.495 35.416L32.775 28.539a1 1 0 00-1.414 0l-2.828 2.828a1 1 0 000 1.415L39.46 43.71a1 1 0 001.415 0l2.828-2.828a1 1 0 000-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <div class="parameters__item-title">Тип дома</div>
+              <div class="parameters__item-value">кирпичный</div>
+            </div>
+            <div class="parameters__item">
+              <svg class="parameters__item-icon" width="48" height="48" viewBox="0 0 48 48">
+                <path
+                  d="M20 18a1 1 0 002 0v-4a1 1 0 00-2 0v4zm1 11a1 1 0 01-1-1v-4a1 1 0 012 0v4a1 1 0 01-1 1zm-1 9a1 1 0 002 0v-4a1 1 0 00-2 0v4zm7-19a1 1 0 01-1-1v-4a1 1 0 012 0v4a1 1 0 01-1 1zm-1 9a1 1 0 002 0v-4a1 1 0 00-2 0v4zm1 11a1 1 0 01-1-1v-4a1 1 0 012 0v4a1 1 0 01-1 1z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M39 44v-4.056c4.522-.512 8-4.458 8-9.194a9.338 9.338 0 00-3.149-7.028c-.296-.262-.487-.71-.487-1.222 0-3.008-2.373-5.5-5.364-5.5-1.6 0-3.023.713-4 1.836V9a3 3 0 00-3-3V5a3 3 0 00-3-3h-8a3 3 0 00-3 3v1a3 3 0 00-3 3v23.006a7.15 7.15 0 00-.304-.006c-3.374 0-6.211 2.333-6.918 5.474C5.154 38.134 4 39.713 4 41.57c0 .9.27 1.733.732 2.429H3a1 1 0 000 2h42a1 1 0 000-2h-6zM17 8a1 1 0 00-1 1v35h16v-6.355a9.353 9.353 0 01-3-6.895 9.343 9.343 0 013-6.895V9a1 1 0 00-1-1H17zm17 36v-4.96c.92.47 1.93.783 3 .904V44h-3zm5-6.074c3.372-.501 6-3.5 6-7.176 0-2.22-.962-4.2-2.47-5.527-.812-.715-1.166-1.759-1.166-2.723 0-1.962-1.535-3.5-3.364-3.5s-3.364 1.538-3.364 3.5c0 .964-.354 2.008-1.166 2.723A7.34 7.34 0 0031 30.75c0 3.677 2.628 6.675 6 7.176V32a1 1 0 012 0v5.926zM29 6V5a1 1 0 00-1-1h-8a1 1 0 00-1 1v1h10zM14 34.009a5.2 5.2 0 00-.304-.009c-2.602 0-4.732 1.916-5.047 4.366a4.97 4.97 0 00-.04.634h-.13v.143c-.205 0-.402.024-.59.068C6.795 39.473 6 40.44 6 41.571 6 42.9 7.096 44 8.478 44H14v-9.991z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <div class="parameters__item-title">Число корпусов</div>
+              <div class="parameters__item-value">1</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div class="map__wrapper container">
+          <h3 class="map__title">Расположение</h3>
+          <div class="map__address">Анталия</div>
+          <div class="map__body">
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=30.696747%2C36.885751&z=8" width="560" height="200" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <section class="simialar-mobile">
+        <div class="simialar-mobile__wrapper">
+          <h3 class="simialar-mobile__title">Вам может быть интересно</h3>
+          <div class="simialar-mobile__catalog catalog">
+            <ul class="catalog__body">
+              <li class="catalog__card card">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                    <div class="card__header-left">
+                      <h3 class="card__title">EMERALD ELEGANCE</h3>
+                      <div class="card__developer">Застройщик</div>
+                    </div>
+                    <a href="/" class="card__favorite favorite">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="card__img-wrapper">
+                    <div class="card__slider swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/house1.webp" class="card__img" />
+                          <ul class="card__tags">
+                            <li class="card__tag">Новостройка</li>
+                          </ul>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/details12.webp" class="card__img" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/details13.webp" class="card__img" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/details14.webp" class="card__img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__address">Турция Анталия</div>
+                  <div class="card__info-wrapper bs-trigger" data-bs-target="card-info-1">
+                    <div class="bs-trigger__label card__info">
+                      Площадь комплекса 3911 м2 2 блока 168 квартиры 1+1, 2+1 планировки. Квартиры сдаются с чистовой отделкой , Стальная входная дверь,
+                      дизайнерские встроенные шкафы, ПВХ-дверями с двойным стеклопакетом, Подвесными потолками, Кухонными и бато-долапами, сантехникой высшего
+                      класса и душевыми кабинками . В инфраструктуру входят Открытый бассейн, Игровые и спортивные зоны, Беседки для отдыха и Барбекю .
+                      Круглосуточная охрана, Видеонаблюдение и современные лифты . Комплекс удобно расположен: от него до пляжа — 550 м, до ближайших магазинов
+                      — 550 м, до школы — 3 км, до медицинского центра — 6 км, до центра Мерсина — 27 км, до марины — 21,2 км. Срок сдачи: 06.2025
+                    </div>
+
+                    <svg class="bs-trigger__icon" width="16" height="16">
+                      <path
+                        d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                        fill="#00000052"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="bs-content" id="card-info-1">
+                    <p>
+                      Площадь комплекса 3911 м2 2 блока 168 квартиры 1+1, 2+1 планировки. Квартиры сдаются с чистовой отделкой , Стальная входная дверь,
+                      дизайнерские встроенные шкафы, ПВХ-дверями с двойным стеклопакетом, Подвесными потолками, Кухонными и бато-долапами, сантехникой высшего
+                      класса и душевыми кабинками . В инфраструктуру входят Открытый бассейн, Игровые и спортивные зоны, Беседки для отдыха и Барбекю .
+                      Круглосуточная охрана, Видеонаблюдение и современные лифты . Комплекс удобно расположен: от него до пляжа — 550 м, до ближайших магазинов
+                      — 550 м, до школы — 3 км, до медицинского центра — 6 км, до центра Мерсина — 27 км, до марины — 21,2 км. Срок сдачи: 06.2025
+                    </p>
+                  </div>
+
+                  <div class="card__prices-table">
+                    <div class="card__prices-row">
+                      <span class="card__prices-content">1+1</span>
+                      <span class="card__prices-content">от 53 кв.м </span>
+                      <span class="card__prices-content">от 62 000 € </span>
+                    </div>
+                    <div class="card__prices-row">
+                      <span class="card__prices-content">1+1 </span>
+                      <span class="card__prices-content">от 58 кв.м</span>
+                      <span class="card__prices-content">от 69 000 € </span>
+                    </div>
+                    <div class="card__prices-row">
+                      <span class="card__prices-content">2+1 </span>
+                      <span class="card__prices-content">от 92 кв.м </span>
+                      <span class="card__prices-content">от 81 000 € </span>
+                    </div>
+                  </div>
+
+                  <div class="card__buttons">
+                    <a href="/" class="card__button card__button--details">Подробнее</a>
+                    <a href="/" class="card__button card__button--favorite">В избранное</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__card card">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                    <div class="card__header-left">
+                      <h3 class="card__title">Aqua Marin</h3>
+                      <div class="card__developer">Застройщик</div>
+                    </div>
+                    <a href="/" class="card__favorite favorite">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="card__img-wrapper">
+                    <div class="card__slider swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/house2.webp" class="card__img" />
+                          <ul class="card__tags">
+                            <li class="card__tag">Новостройка</li>
+                          </ul>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/details22.webp" class="card__img" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/details23.webp" class="card__img" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/details24.webp" class="card__img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__address">Турция Анталия</div>
+                  <div class="card__info-wrapper bs-trigger" data-bs-target="card-info-2">
+                    <div class="bs-trigger__label card__info">
+                      Площадь комплекса 7000 м2 350 квартиры 1+1, 2+1 планировки. Все квартиры сдаются с полной отделкой «turnkey» — готовой меблировкой,
+                      кухонными гарнитурами и санфаянсом. В инфраструктуру входят открытый бассейн с аквапарком, фитнес‑центр, турецкая баня, сауна, детская
+                      площадка, баскетбольная площадка, зоны отдыха с беседками и барбекю, круглосуточная охрана и система видеонаблюдения. Срок сдачи: 04.2025
+                    </div>
+
+                    <svg class="bs-trigger__icon" width="16" height="16">
+                      <path
+                        d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                        fill="#00000052"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="bs-content" id="card-info-2">
+                    <p>
+                      Площадь комплекса 7000 м2 350 квартиры 1+1, 2+1 планировки. Все квартиры сдаются с полной отделкой «turnkey» — готовой меблировкой,
+                      кухонными гарнитурами и санфаянсом. В инфраструктуру входят открытый бассейн с аквапарком, фитнес‑центр, турецкая баня, сауна, детская
+                      площадка, баскетбольная площадка, зоны отдыха с беседками и барбекю, круглосуточная охрана и система видеонаблюдения. Срок сдачи: 04.2025
+                    </p>
+                  </div>
+
+                  <div class="card__prices-table">
+                    <div class="card__prices-row">
+                      <span class="card__prices-content"> 1+1</span>
+                      <span class="card__prices-content">65 кв.м </span>
+                      <span class="card__prices-content">57 000 € </span>
+                    </div>
+                    <div class="card__prices-row">
+                      <span class="card__prices-content"> 2+1 </span>
+                      <span class="card__prices-content">120 кв.м </span>
+                      <span class="card__prices-content">105 000 € </span>
+                    </div>
+                  </div>
+
+                  <div class="card__buttons">
+                    <a href="/" class="card__button card__button--details">Подробнее</a>
+                    <a href="/" class="card__button card__button--favorite">В избранное</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__card card">
+                <div class="card__wrapper">
+                  <div class="card__header">
+                    <div class="card__header-left">
+                      <h3 class="card__title">PIYALEPASA PREMIUM</h3>
+                      <div class="card__developer">Застройщик</div>
+                    </div>
+                    <a href="/" class="card__favorite favorite">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="card__img-wrapper">
+                    <div class="card__slider swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="images/house3.webp" class="card__img" />
+                          <ul class="card__tags">
+                            <li class="card__tag">Новостройка</li>
+                          </ul>
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/details32.webp" class="card__img" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/details33.webp" class="card__img" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="images/details34.webp" class="card__img" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__address">Турция Анталия</div>
+                  <div class="card__info-wrapper bs-trigger" data-bs-target="card-info-3">
+                    <div class="bs-trigger__label card__info">
+                      Площадь комплекса 5738 м2 2 блока 124 квартир 1+1, 2+1 и 3+1 планировки. Потолки высотой 3,10 м (в блоке A) и 2,80 м (в блоке B). Все
+                      квартиры будут сдаваться с Чистовой отделкой, Встроенной кухонной техникой: варочная панель, вытяжка, Духовой шкаф и посудомоечная машина,
+                      Центральное отоплением, Интеграцией систем "умный дом" и Энергоэффективное остекление, Инфраструктура включает Закрытый и Открытый
+                      бассейн, Частную парковку, Фитнес и Социальные зоны, Лобби-услуги и 7/24 Охрану с видеонаблюдением. Расположен всего в 750 м от станции
+                      метро Fulya и в 2 км от набережной. В шаговой доступности также находятся ведущие университеты, а также престижные школы, Медицинская
+                      инфраструктура. Рядом расположены знаковые достопримечательности. До аэропортов: 30 км. Срок сдачи: 09.2025
+                    </div>
+
+                    <svg class="bs-trigger__icon" width="16" height="16">
+                      <path
+                        d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                        fill="#00000052"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="bs-content" id="card-info-3">
+                    <p>
+                      Площадь комплекса 5738 м2 2 блока 124 квартир 1+1, 2+1 и 3+1 планировки. Потолки высотой 3,10 м (в блоке A) и 2,80 м (в блоке B). Все
+                      квартиры будут сдаваться с Чистовой отделкой, Встроенной кухонной техникой: варочная панель, вытяжка, Духовой шкаф и посудомоечная машина,
+                      Центральное отоплением, Интеграцией систем "умный дом" и Энергоэффективное остекление, Инфраструктура включает Закрытый и Открытый
+                      бассейн, Частную парковку, Фитнес и Социальные зоны, Лобби-услуги и 7/24 Охрану с видеонаблюдением. Расположен всего в 750 м от станции
+                      метро Fulya и в 2 км от набережной. В шаговой доступности также находятся ведущие университеты, а также престижные школы, Медицинская
+                      инфраструктура. Рядом расположены знаковые достопримечательности. До аэропортов: 30 км. Срок сдачи: 09.2025
+                    </p>
+                  </div>
+
+                  <div class="card__prices-table">
+                    <div class="card__prices-row">
+                      <span class="card__prices-content"> 1+1</span>
+                      <span class="card__prices-content">72.84 кв.м </span>
+                      <span class="card__prices-content">499 153 € </span>
+                    </div>
+                    <div class="card__prices-row">
+                      <span class="card__prices-content">1+1 </span>
+                      <span class="card__prices-content">90.98 кв.м </span>
+                      <span class="card__prices-content">725 934 € </span>
+                    </div>
+                    <div class="card__prices-row">
+                      <span class="card__prices-content"> 2+1 </span>
+                      <span class="card__prices-content">129.19 кв.м </span>
+                      <span class="card__prices-content">931 689 € </span>
+                    </div>
+                  </div>
+
+                  <div class="card__buttons">
+                    <a href="/" class="card__button card__button--details">Подробнее</a>
+                    <a href="/" class="card__button card__button--favorite">В избранное</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__outer">
-        <div class="footer__wrapper container">
+        <div class="footer__wrapper footer__wrapper--details container">
           <div class="footer__columns">
             <div class="footer__column accordion">
               <div class="footer__column-header accordion__trigger">
