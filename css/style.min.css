@@ -794,6 +794,10 @@ a.breadcrumbs__item:hover {
   font-weight: 500;
 }
 
+.is-arrow {
+  display: none !important;
+}
+
 .filter-switch {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
