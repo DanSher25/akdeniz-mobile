@@ -1342,11 +1342,6 @@ a.breadcrumbs__item:hover {
   flex: 1;
   height: 36px;
 }
-.modal .filter__room:nth-child(1) {
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-}
 .modal .filter__room-pill {
   border: none;
   text-align: center;
