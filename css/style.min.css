@@ -494,9 +494,9 @@ template {
 
 .container {
   margin: 0 auto;
-  max-width: 1292px;
+  max-width: 1300px;
   width: 100%;
-  padding: 0 16px;
+  padding: 0 12px;
 }
 
 html {
@@ -685,7 +685,7 @@ a.breadcrumbs__item:hover {
   flex-shrink: 0;
 }
 .bs__content {
-  padding: 0 16px 24px;
+  padding: 0 12px 24px;
   overflow-y: auto;
   font-size: 14px;
   line-height: 20px;
@@ -1390,7 +1390,7 @@ a.breadcrumbs__item:hover {
   margin-bottom: 12px;
 }
 .modal .filter__all-header-wrapper {
-  padding: 16px;
+  padding: 12px;
 }
 
 .catalog__wrapper {
@@ -1418,7 +1418,7 @@ a.breadcrumbs__item:hover {
   flex-direction: column;
   background-color: #fff;
   border-radius: 20px;
-  padding: 16px;
+  padding: 12px;
 }
 .card .card__img-wrapper {
   border-radius: 12px;
@@ -1629,7 +1629,8 @@ a.breadcrumbs__item:hover {
 
 .footer__wrapper {
   margin-top: 32px;
-  padding: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 58px;
   color: rgba(0, 0, 0, 0.92);
   font-size: 16px;
@@ -2547,6 +2548,18 @@ a.breadcrumbs__item:hover {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  position: relative;
+  padding-left: 12px;
+}
+.plans__body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 2px;
+  background-color: rgba(0, 0, 0, 0.3215686275);
 }
 .plans__arrow {
   -webkit-transform: rotate(-90deg);
@@ -2617,7 +2630,7 @@ a.breadcrumbs__item:hover {
   margin-top: 52px;
   height: 100%;
   background-color: #fff;
-  padding: 16px;
+  padding: 16px 12px;
 }
 .plans-modal__sort {
   display: -webkit-box;
@@ -2808,5 +2821,5 @@ a.breadcrumbs__item:hover {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  padding-left: 16px;
+  padding-left: 12px;
 }
