@@ -1784,6 +1784,11 @@ a.breadcrumbs__item:hover {
   font-weight: 700;
   font-size: 20px;
 }
+.footer__abbreviation {
+  font-size: 12px;
+  margin-top: 12px;
+  color: rgba(0, 0, 0, 0.56);
+}
 
 .on-map__wrapper {
   position: fixed;
