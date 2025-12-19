@@ -859,6 +859,12 @@ a.breadcrumbs__item:hover {
   align-items: center;
   gap: 11px;
 }
+.header--sticky {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+}
 .header__logo {
   font-weight: 700;
   color: #000;
@@ -2062,6 +2068,9 @@ a.breadcrumbs__item:hover {
   display: block;
 }
 
+.gallery__wrapper {
+  padding: 0;
+}
 .gallery__list {
   margin-top: 8px;
   display: grid;
@@ -2072,6 +2081,7 @@ a.breadcrumbs__item:hover {
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  padding-left: 12px;
 }
 .gallery__list::-webkit-scrollbar {
   display: none;
