@@ -11,74 +11,81 @@
     <header class="header header--sticky">
       <div class="header__wrapper container">
         <div class="header__top">
-          <div class="header__burger">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-              <g id="SVGRepo_iconCarrier">
-                <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
-                <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
-                <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
-              </g>
-            </svg>
-          </div>
-          <a href="/" class="header__prev-page">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M15.707 5.293a1 1 0 010 1.414L10.414 12l5.293 5.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z"
-                fill="currentColor"
-              ></path>
-            </svg>
-          </a>
-          <div class="header__share bs-trigger" data-bs-target="share">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M13 6a4 4 0 118 0 4 4 0 01-8 0zm4 2a2 2 0 110-4 2 2 0 010 4z" fill="currentColor"></path>
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M1 12a4 4 0 017.017-2.627l5.07-2.535c.145.675.459 1.287.896 1.788l-5.07 2.536a4.015 4.015 0 01-.001 1.676l5.07 2.536a4 4 0 11-.895 1.789l-5.07-2.536A4 4 0 011 12zm4 2a2 2 0 110-4 2 2 0 010 4zm10 4a2 2 0 104 0 2 2 0 00-4 0z"
-                fill="currentColor"
-              ></path>
-            </svg>
-            <div class="bs-content" id="share">
-              <div class="share">
-                <div class="share__wrapper">
-                  <ul class="share__list">
-                    <li class="share__item">
-                      <div class="share__img-wrapper"><img src="images/vk.svg" alt="" class="share__img" /></div>
-                      <span class="share__item-title">ВКонтакте</span>
-                    </li>
-                    <li class="share__item">
-                      <div class="share__img-wrapper"><img src="images/ok.svg" alt="" class="share__img" /></div>
-                      <span class="share__item-title">Одноклассники</span>
-                    </li>
-                    <li class="share__item">
-                      <div class="share__img-wrapper"><img src="images/whatsapp.svg" alt="" class="share__img" /></div>
-                      <span class="share__item-title">WhatsApp</span>
-                    </li>
-                    <li class="share__item">
-                      <div class="share__img-wrapper"><img src="images/tg.svg" alt="" class="share__img" /></div>
-                      <span class="share__item-title">Телеграм</span>
-                    </li>
-                    <li class="share__item">
-                      <div class="share__img-wrapper"><img src="images/share.svg" alt="" class="share__img share__img--copy" /></div>
-                      <span class="share__item-title">Скопировать ссылку</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="share__cancel-btn bs__close">Отменить</div>
+          <div class="header__left">
+            <div class="header__burger">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                  <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                  <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                </g>
+              </svg>
             </div>
+            <a href="/" class="header__prev-page">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.707 5.293a1 1 0 010 1.414L10.414 12l5.293 5.293a1 1 0 01-1.414 1.414l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 0z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
           </div>
-          <a href="/" class="header__favorite header__favorite--left favorite">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-              ></path>
-            </svg>
-          </a>
+          <div class="header__logo-small">
+            <img src="images/logo-small.png" alt="" />
+          </div>
+          <div class="header__right">
+            <div class="header__share bs-trigger" data-bs-target="share">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 6a4 4 0 118 0 4 4 0 01-8 0zm4 2a2 2 0 110-4 2 2 0 010 4z" fill="currentColor"></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1 12a4 4 0 017.017-2.627l5.07-2.535c.145.675.459 1.287.896 1.788l-5.07 2.536a4.015 4.015 0 01-.001 1.676l5.07 2.536a4 4 0 11-.895 1.789l-5.07-2.536A4 4 0 011 12zm4 2a2 2 0 110-4 2 2 0 010 4zm10 4a2 2 0 104 0 2 2 0 00-4 0z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <div class="bs-content" id="share">
+                <div class="share">
+                  <div class="share__wrapper">
+                    <ul class="share__list">
+                      <li class="share__item">
+                        <div class="share__img-wrapper"><img src="images/vk.svg" alt="" class="share__img" /></div>
+                        <span class="share__item-title">ВКонтакте</span>
+                      </li>
+                      <li class="share__item">
+                        <div class="share__img-wrapper"><img src="images/ok.svg" alt="" class="share__img" /></div>
+                        <span class="share__item-title">Одноклассники</span>
+                      </li>
+                      <li class="share__item">
+                        <div class="share__img-wrapper"><img src="images/whatsapp.svg" alt="" class="share__img" /></div>
+                        <span class="share__item-title">WhatsApp</span>
+                      </li>
+                      <li class="share__item">
+                        <div class="share__img-wrapper"><img src="images/tg.svg" alt="" class="share__img" /></div>
+                        <span class="share__item-title">Телеграм</span>
+                      </li>
+                      <li class="share__item">
+                        <div class="share__img-wrapper"><img src="images/share.svg" alt="" class="share__img share__img--copy" /></div>
+                        <span class="share__item-title">Скопировать ссылку</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="share__cancel-btn bs__close">Отменить</div>
+              </div>
+            </div>
+            <a href="/" class="header__favorite header__favorite--left favorite">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                ></path>
+              </svg>
+            </a>
+          </div>
         </div>
         <div class="header__mobile-menu">
           <ul class="header__top-menu">

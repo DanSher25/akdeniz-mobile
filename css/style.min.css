@@ -857,6 +857,18 @@ a.breadcrumbs__item:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 11px;
+}
+.header__right, .header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 11px;
 }
 .header--sticky {
@@ -869,6 +881,11 @@ a.breadcrumbs__item:hover {
   font-weight: 700;
   color: #000;
   font-size: 20px;
+}
+.header__logo-small {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
 }
 .header__prev-page {
   height: 24px;
